@@ -1,6 +1,6 @@
 # OCStore LiveOpencart
 
-В сборке от liveopencart.ru убраны ненужные для РФ варианты оплат и доставок, загрузка данных с серверов opencartforum и opencart, исправлены наекоторые ошибки. Информацию можно найти на [форуме](https://forum.liveopencart.ru/viewtopic.php?t=13) или сайте [liveopencart.ru](https://liveopencart.ru)Ниже содержится оригинальное содержимое файлов.
+В сборке от liveopencart.ru убраны ненужные для РФ варианты оплат и доставок, загрузка данных с серверов opencartforum и opencart, исправлены некоторые ошибки. Информацию можно найти на [форуме](https://forum.liveopencart.ru/viewtopic.php?t=13) или сайте [liveopencart.ru](https://liveopencart.ru). Ниже содержится оригинальное содержимое файлов.
 
 # ocStore
 
