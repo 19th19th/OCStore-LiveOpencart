@@ -4,6 +4,7 @@
 
 class ControllerExtensionModuleFeaturedArticle extends Controller {
 	public function index($setting) {
+		
 		if (isset($this->request->get['product_id']) || isset($this->request->get['manufacturer_id']) || isset($this->request->get['path'])) {
 			$this->load->language('extension/module/featured_article');
 
@@ -16,32 +17,39 @@ class ControllerExtensionModuleFeaturedArticle extends Controller {
 			$results = array();
 			
 			if (isset($this->request->get['product_id'])) {
-				$filter_data = array(
-					'product_id'  => $this->request->get['product_id'],
-					'limit' => $setting['limit']
-				);
+				
+					$filter_data = array(
+						'product_id'  => $this->request->get['product_id'],
+						'limit' => $setting['limit']
+					);
 					
 				$results = $this->model_blog_article->getArticleRelatedByProduct($filter_data);
 					
 			} elseif (isset($this->request->get['manufacturer_id'])) {
-				$filter_data = array(
-					'manufacturer_id'  => $this->request->get['manufacturer_id'],
-					'limit' => $setting['limit']
-				);
 					
-				$results = $this->model_blog_article->getArticleRelatedByManufacturer($filter_data);
-			} else {
-				$parts = explode('_', (string)$this->request->get['path']);
-
-				if(!empty($parts) && is_array($parts)) {
 					$filter_data = array(
-						'category_id'  => array_pop($parts),
+						'manufacturer_id'  => $this->request->get['manufacturer_id'],
 						'limit' => $setting['limit']
 					);
+					
+					$results = $this->model_blog_article->getArticleRelatedByManufacturer($filter_data);
+				
+			} else {
+				
+					$parts = explode('_', (string)$this->request->get['path']);
+					
+					if(!empty($parts) && is_array($parts)) {
+					
+						$filter_data = array(
+							'category_id'  => array_pop($parts),
+							'limit' => $setting['limit']
+						);
 						
-					$results = $this->model_blog_article->getArticleRelatedByCategory($filter_data);			
-				}
+					$results = $this->model_blog_article->getArticleRelatedByCategory($filter_data);
+								
+					}
 			}
+
 	
 			if ($results) {
 				foreach ($results as $result) {
@@ -74,6 +82,9 @@ class ControllerExtensionModuleFeaturedArticle extends Controller {
 				
 				return $this->load->view('extension/module/featured_article', $data);
 			}
+		
 		}
+		
 	}
+	
 }
