@@ -5,7 +5,6 @@
 class ControllerExtensionModuleFeaturedProduct extends Controller {
 	public function index($setting) {
 		
-		
 		if (!$setting['limit']) {
 			$setting['limit'] = 4;
 		}
@@ -14,43 +13,36 @@ class ControllerExtensionModuleFeaturedProduct extends Controller {
 		
 		$this->load->model('catalog/cms');
 		
-			if (isset($this->request->get['manufacturer_id'])) {
+		if (isset($this->request->get['manufacturer_id'])) {
+			$filter_data = array(
+				'manufacturer_id'  => $this->request->get['manufacturer_id'],
+				'limit' => $setting['limit']
+			);
 					
-					$filter_data = array(
-						'manufacturer_id'  => $this->request->get['manufacturer_id'],
-						'limit' => $setting['limit']
-					);
-					
-					$results = $this->model_catalog_cms->getProductRelatedByManufacturer($filter_data);
+			$results = $this->model_catalog_cms->getProductRelatedByManufacturer($filter_data);
 				
-			} else {
-				
-					$parts = explode('_', (string)$this->request->get['path']);
+		} else {
+			$parts = explode('_', (string)$this->request->get['path']);
 					
-					if(!empty($parts) && is_array($parts)) {
-					
-						$filter_data = array(
-							'category_id'  => array_pop($parts),
-							'limit' => $setting['limit']
-						);
+			if(!empty($parts) && is_array($parts)) {
+				$filter_data = array(
+					'category_id'  => array_pop($parts),
+					'limit' => $setting['limit']
+				);
 						
-					$results = $this->model_catalog_cms->getProductRelatedByCategory($filter_data);
-								
-					}
+				$results = $this->model_catalog_cms->getProductRelatedByCategory($filter_data);			
 			}
+		}
 		
 		$this->load->language('extension/module/featured_product');
 
 		$this->load->model('catalog/product');
-
 		$this->load->model('tool/image');
 
 		$data['products'] = array();
 		
 		if (!empty($results)) {
-			
 			foreach ($results as $product) {
-
 				if ($product) {
 					if ($product['image']) {
 						$image = $this->model_tool_image->resize($product['image'], $setting['width'], $setting['height']);
@@ -82,7 +74,6 @@ class ControllerExtensionModuleFeaturedProduct extends Controller {
 						$rating = false;
 					}
 					
-
 					$data['products'][] = array(
 						'product_id'  => $product['product_id'],
 						'thumb'       => $image,
@@ -99,7 +90,5 @@ class ControllerExtensionModuleFeaturedProduct extends Controller {
 		}
 		
 		return $this->load->view('extension/module/featured_product', $data);
-
 	}
-	
 }
