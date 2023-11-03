@@ -318,8 +318,8 @@ class ControllerAccountReturn extends Controller {
 
 		$this->load->model('catalog/product');
 
-		if (isset($this->request->get['product_id'])) {
-			$product_info = $this->model_catalog_product->getProduct($this->request->get['product_id']);
+		if (isset($this->request->get['return_product_id'])) {
+			$product_info = $this->model_catalog_product->getProduct($this->request->get['return_product_id']);
 		}
 
 		if (isset($this->request->post['order_id'])) {
