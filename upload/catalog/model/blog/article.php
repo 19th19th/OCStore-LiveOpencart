@@ -27,7 +27,7 @@ class ModelBlogArticle extends Model {
 				'meta_description' => $query->row['meta_description'],
 				'meta_keyword'     => $query->row['meta_keyword'],
 				'image'            => $query->row['image'],
-				'rating'           => round($query->row['rating']),
+				'rating'           => $query->row['rating'] ? round($query->row['rating']) : 0,
 				'reviews'          => $query->row['reviews'],
 				'sort_order'       => $query->row['sort_order'],
 				'article_review'   => $query->row['article_review'],
