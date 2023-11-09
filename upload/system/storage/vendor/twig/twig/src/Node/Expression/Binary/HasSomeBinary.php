@@ -13,12 +13,12 @@ namespace Twig\Node\Expression\Binary;
 
 use Twig\Compiler;
 
-class RangeBinary extends AbstractBinary
+class HasSomeBinary extends AbstractBinary
 {
     public function compile(Compiler $compiler): void
     {
         $compiler
-            ->raw('range(')
+            ->raw('twig_array_some($this->env, ')
             ->subcompile($this->getNode('left'))
             ->raw(', ')
             ->subcompile($this->getNode('right'))
@@ -28,6 +28,6 @@ class RangeBinary extends AbstractBinary
 
     public function operator(Compiler $compiler): Compiler
     {
-        return $compiler->raw('..');
+        return $compiler->raw('');
     }
 }

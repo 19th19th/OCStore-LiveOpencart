@@ -51,19 +51,18 @@ class SeoPro {
     }
 
     public function prepareRoute($parts) {
-
         if (!empty($parts) && is_array($parts)) {
-
             foreach($parts as $id => $part) {
 
-                if($this->config->get('config_seopro_lowercase'))
+                if($this->config->get('config_seopro_lowercase')) {
                     $parts[$id] = utf8_strtolower($part);
+				}
 
                 if($parts[$id]) {
 
                     $query = $this->getQueryByKeyword($parts[$id]);
 
-                    $url = explode('=', $query);
+                    $url = explode('=', ($query ? $query : ''));
 
                     if(!empty($url[0])) {
 
