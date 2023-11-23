@@ -831,7 +831,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 (1, 'Рубль', 'RUB', '', 'р.', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
 (2, 'US Dollar', 'USD', '$', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21'),
-(4, 'Гривня', 'UAH', '', 'грн.', '2', 0.44016022, 1, '2017-07-19 21:28:21');
+(4, 'Гривна', 'UAH', '', 'грн.', '2', 0.44016022, 1, '2017-07-19 21:28:21');
 
 -----------------------------------------------------------
 
@@ -1622,8 +1622,7 @@ CREATE TABLE `oc_language` (
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
 (1, 'Russian', 'ru-ru', 'ru_RU.UTF-8,ru_RU,russian', 'gb.png', 'english', 1, 1),
-(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1),
-(3, 'Українська', 'uk-ua', 'uk_UA.UTF-8,uk_UA,uk-ua,uk,ukrainian', 'uk-ua.png', 'uk-ua', 3, 0);
+(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1);
 
 -----------------------------------------------------------
 
@@ -3564,10 +3563,10 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'developer', 'developer_theme', '1', 0),
 (0, 'developer', 'developer_sass', '1', 0),
 (0, 'configblog', 'configblog_name', 'Блог', 0),
-(0, 'configblog', 'configblog_html_h1', 'Блог для интернет-магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_title', 'Блог для интернет-магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_description', 'Блог для интернет-магазина на OpenCart', 0),
-(0, 'configblog', 'configblog_meta_keyword', 'Блог для интернет-магазина на OpenCart', 0),
+(0, 'configblog', 'configblog_html_h1', 'Блог для интернет магазина на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_title', 'Блог для интернет магазина на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_description', 'Блог для интернет магазина на OpenCart', 0),
+(0, 'configblog', 'configblog_meta_keyword', 'Блог для интернет магазина на OpenCart', 0),
 (0, 'configblog', 'configblog_article_count', '1', 0),
 (0, 'configblog', 'configblog_article_limit', '20', 0),
 (0, 'configblog', 'configblog_article_description_length', '200', 0),
