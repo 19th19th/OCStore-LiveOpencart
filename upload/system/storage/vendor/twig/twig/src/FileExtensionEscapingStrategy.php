@@ -31,7 +31,7 @@ class FileExtensionEscapingStrategy
      *
      * @return string|false The escaping strategy name to use or false to disable
      */
-    public static function guess(string $name)
+    public static function guess($name)
     {
         if (\in_array(substr($name, -1), ['/', '\\'])) {
             return 'html'; // return html for directories
@@ -41,7 +41,7 @@ class FileExtensionEscapingStrategy
             $name = substr($name, 0, -5);
         }
 
-        $extension = pathinfo($name, \PATHINFO_EXTENSION);
+        $extension = pathinfo($name, PATHINFO_EXTENSION);
 
         switch ($extension) {
             case 'js':
@@ -58,3 +58,5 @@ class FileExtensionEscapingStrategy
         }
     }
 }
+
+class_alias('Twig\FileExtensionEscapingStrategy', 'Twig_FileExtensionEscapingStrategy');

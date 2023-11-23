@@ -3,7 +3,6 @@ namespace Session;
 
 final class DB {
 	public $maxlifetime;
-	public $db;
 
 	public function __construct($registry) {
 		$this->db = $registry->get('db');
@@ -19,7 +18,7 @@ final class DB {
 		if ($query->num_rows) {
 			return json_decode($query->row['data'], true);
 		} else {
-			return array();
+			return false;
 		}
 	}
 
@@ -50,7 +49,7 @@ final class DB {
 			$gc_probability = 1;
 		}
 
-		if (mt_rand() / mt_getrandmax() < $gc_probability / $gc_divisor) {
+		if (mt_rand() / mt_getrandmax() > $gc_probability / $gc_divisor) {
 			$this->db->query("DELETE FROM `" . DB_PREFIX . "session` WHERE `expire` < '" . $this->db->escape(date('Y-m-d H:i:s', time())) . "'");
 
 			return true;

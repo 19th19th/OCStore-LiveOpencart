@@ -31,7 +31,7 @@ class CheckSecurityNode extends Node
         parent::__construct();
     }
 
-    public function compile(Compiler $compiler): void
+    public function compile(Compiler $compiler)
     {
         $tags = $filters = $functions = [];
         foreach (['tags', 'filters', 'functions'] as $type) {
@@ -45,13 +45,10 @@ class CheckSecurityNode extends Node
         }
 
         $compiler
-            ->write("\n")
-            ->write("public function checkSecurity()\n")
-            ->write("{\n")
-            ->indent()
-            ->write('static $tags = ')->repr(array_filter($tags))->raw(";\n")
-            ->write('static $filters = ')->repr(array_filter($filters))->raw(";\n")
-            ->write('static $functions = ')->repr(array_filter($functions))->raw(";\n\n")
+            ->write("\$this->sandbox = \$this->env->getExtension('\Twig\Extension\SandboxExtension');\n")
+            ->write('$tags = ')->repr(array_filter($tags))->raw(";\n")
+            ->write('$filters = ')->repr(array_filter($filters))->raw(";\n")
+            ->write('$functions = ')->repr(array_filter($functions))->raw(";\n\n")
             ->write("try {\n")
             ->indent()
             ->write("\$this->sandbox->checkSecurity(\n")
@@ -81,8 +78,8 @@ class CheckSecurityNode extends Node
             ->write("throw \$e;\n")
             ->outdent()
             ->write("}\n\n")
-            ->outdent()
-            ->write("}\n")
         ;
     }
 }
+
+class_alias('Twig\Node\CheckSecurityNode', 'Twig_Node_CheckSecurity');

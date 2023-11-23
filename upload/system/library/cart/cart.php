@@ -2,12 +2,6 @@
 namespace Cart;
 class Cart {
 	private $data = array();
-	private $config;
-	private $customer;
-	private $session;
-	private $db;
-	private $tax;
-	private $weight;
 
 	public function __construct($registry) {
 		$this->config = $registry->get('config');

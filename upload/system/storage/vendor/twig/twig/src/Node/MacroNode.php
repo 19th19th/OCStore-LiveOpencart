@@ -21,7 +21,7 @@ use Twig\Error\SyntaxError;
  */
 class MacroNode extends Node
 {
-    public const VARARGS_NAME = 'varargs';
+    const VARARGS_NAME = 'varargs';
 
     public function __construct(string $name, Node $body, Node $arguments, int $lineno, string $tag = null)
     {
@@ -34,7 +34,7 @@ class MacroNode extends Node
         parent::__construct(['body' => $body, 'arguments' => $arguments], ['name' => $name], $lineno, $tag);
     }
 
-    public function compile(Compiler $compiler): void
+    public function compile(Compiler $compiler)
     {
         $compiler
             ->addDebugInfo($this)
@@ -111,3 +111,5 @@ class MacroNode extends Node
         ;
     }
 }
+
+class_alias('Twig\Node\MacroNode', 'Twig_Node_Macro');

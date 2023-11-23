@@ -1,8 +1,6 @@
 <?php
 namespace Cart;
 class Currency {
-	private $db;
-	private $language;
 	private $currencies = array();
 
 	public function __construct($registry) {

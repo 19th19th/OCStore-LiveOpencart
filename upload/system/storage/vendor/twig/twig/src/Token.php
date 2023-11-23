@@ -13,6 +13,8 @@
 namespace Twig;
 
 /**
+ * Represents a Token.
+ *
  * @author Fabien Potencier <fabien@symfony.com>
  */
 final class Token
@@ -21,22 +23,27 @@ final class Token
     private $type;
     private $lineno;
 
-    public const EOF_TYPE = -1;
-    public const TEXT_TYPE = 0;
-    public const BLOCK_START_TYPE = 1;
-    public const VAR_START_TYPE = 2;
-    public const BLOCK_END_TYPE = 3;
-    public const VAR_END_TYPE = 4;
-    public const NAME_TYPE = 5;
-    public const NUMBER_TYPE = 6;
-    public const STRING_TYPE = 7;
-    public const OPERATOR_TYPE = 8;
-    public const PUNCTUATION_TYPE = 9;
-    public const INTERPOLATION_START_TYPE = 10;
-    public const INTERPOLATION_END_TYPE = 11;
-    public const ARROW_TYPE = 12;
+    const EOF_TYPE = -1;
+    const TEXT_TYPE = 0;
+    const BLOCK_START_TYPE = 1;
+    const VAR_START_TYPE = 2;
+    const BLOCK_END_TYPE = 3;
+    const VAR_END_TYPE = 4;
+    const NAME_TYPE = 5;
+    const NUMBER_TYPE = 6;
+    const STRING_TYPE = 7;
+    const OPERATOR_TYPE = 8;
+    const PUNCTUATION_TYPE = 9;
+    const INTERPOLATION_START_TYPE = 10;
+    const INTERPOLATION_END_TYPE = 11;
+    const ARROW_TYPE = 12;
 
-    public function __construct(int $type, $value, int $lineno)
+    /**
+     * @param int    $type   The type of the token
+     * @param string $value  The token value
+     * @param int    $lineno The line position in the source
+     */
+    public function __construct($type, $value, $lineno)
     {
         $this->type = $type;
         $this->value = $value;
@@ -58,8 +65,10 @@ final class Token
      *
      * @param array|string|int  $type   The type to test
      * @param array|string|null $values The token value
+     *
+     * @return bool
      */
-    public function test($type, $values = null): bool
+    public function test($type, $values = null)
     {
         if (null === $values && !\is_int($type)) {
             $values = $type;
@@ -73,22 +82,39 @@ final class Token
         );
     }
 
-    public function getLine(): int
+    /**
+     * @return int
+     */
+    public function getLine()
     {
         return $this->lineno;
     }
 
-    public function getType(): int
+    /**
+     * @return int
+     */
+    public function getType()
     {
         return $this->type;
     }
 
+    /**
+     * @return string
+     */
     public function getValue()
     {
         return $this->value;
     }
 
-    public static function typeToString(int $type, bool $short = false): string
+    /**
+     * Returns the constant representation (internal) of a given type.
+     *
+     * @param int  $type  The type as an integer
+     * @param bool $short Whether to return a short representation or not
+     *
+     * @return string The string representation
+     */
+    public static function typeToString($type, $short = false)
     {
         switch ($type) {
             case self::EOF_TYPE:
@@ -140,7 +166,14 @@ final class Token
         return $short ? $name : 'Twig\Token::'.$name;
     }
 
-    public static function typeToEnglish(int $type): string
+    /**
+     * Returns the English representation of a given type.
+     *
+     * @param int $type The type as an integer
+     *
+     * @return string The string representation
+     */
+    public static function typeToEnglish($type)
     {
         switch ($type) {
             case self::EOF_TYPE:
@@ -176,3 +209,5 @@ final class Token
         }
     }
 }
+
+class_alias('Twig\Token', 'Twig_Token');

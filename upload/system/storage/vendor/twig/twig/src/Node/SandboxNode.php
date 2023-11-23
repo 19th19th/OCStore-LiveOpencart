@@ -25,7 +25,7 @@ class SandboxNode extends Node
         parent::__construct(['body' => $body], [], $lineno, $tag);
     }
 
-    public function compile(Compiler $compiler): void
+    public function compile(Compiler $compiler)
     {
         $compiler
             ->addDebugInfo($this)
@@ -34,19 +34,14 @@ class SandboxNode extends Node
             ->write("\$this->sandbox->enableSandbox();\n")
             ->outdent()
             ->write("}\n")
-            ->write("try {\n")
-            ->indent()
             ->subcompile($this->getNode('body'))
-            ->outdent()
-            ->write("} finally {\n")
-            ->indent()
             ->write("if (!\$alreadySandboxed) {\n")
             ->indent()
             ->write("\$this->sandbox->disableSandbox();\n")
             ->outdent()
             ->write("}\n")
-            ->outdent()
-            ->write("}\n")
         ;
     }
 }
+
+class_alias('Twig\Node\SandboxNode', 'Twig_Node_Sandbox');

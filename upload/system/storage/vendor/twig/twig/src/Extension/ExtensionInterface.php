@@ -11,9 +11,6 @@
 
 namespace Twig\Extension;
 
-use Twig\ExpressionParser;
-use Twig\Node\Expression\Binary\AbstractBinary;
-use Twig\Node\Expression\Unary\AbstractUnary;
 use Twig\NodeVisitor\NodeVisitorInterface;
 use Twig\TokenParser\TokenParserInterface;
 use Twig\TwigFilter;
@@ -66,11 +63,11 @@ interface ExtensionInterface
      * Returns a list of operators to add to the existing list.
      *
      * @return array<array> First array of unary operators, second array of binary operators
-     *
-     * @psalm-return array{
-     *     array<string, array{precedence: int, class: class-string<AbstractUnary>}>,
-     *     array<string, array{precedence: int, class: class-string<AbstractBinary>, associativity: ExpressionParser::OPERATOR_*}>
-     * }
      */
     public function getOperators();
 }
+
+class_alias('Twig\Extension\ExtensionInterface', 'Twig_ExtensionInterface');
+
+// Ensure that the aliased name is loaded to keep BC for classes implementing the typehint with the old aliased name.
+class_exists('Twig\Environment');

@@ -22,7 +22,11 @@ namespace Twig\Extension;
 interface GlobalsInterface
 {
     /**
-     * @return array<string, mixed>
+     * Returns a list of global variables to add to the existing list.
+     *
+     * @return array An array of global variables
      */
-    public function getGlobals(): array;
+    public function getGlobals();
 }
+
+class_alias('Twig\Extension\GlobalsInterface', 'Twig_Extension_GlobalsInterface');
