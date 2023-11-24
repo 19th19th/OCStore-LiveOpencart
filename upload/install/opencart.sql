@@ -1852,7 +1852,6 @@ CREATE TABLE `oc_manufacturer_description` (
   `manufacturer_id` int(11) NOT NULL DEFAULT '0',
   `language_id` int(11) NOT NULL DEFAULT '0',
   `description` text NOT NULL,
-  `description3` text NOT NULL,
   `meta_description` varchar(255) NOT NULL,
   `meta_keyword` varchar(255) NOT NULL,
   `meta_title` varchar(255) NOT NULL,
@@ -1863,19 +1862,19 @@ CREATE TABLE `oc_manufacturer_description` (
 -- Dumping data for table `oc_manufacturer_description`
 --
 
-INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `description3`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
-(8, 1, '&lt;br&gt;', '', '', '', '', ''),
-(8, 2, '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', '', '', ''),
-(7, 1, '', '', '', '', '', ''),
-(7, 2, '', '', '', '', '', ''),
-(6, 2, '', '', '', '', '', ''),
-(5, 1, '', '', '', '', '', ''),
-(5, 2, '', '', '', '', '', ''),
-(6, 1, '', '', '', '', '', ''),
-(9, 2, '', '', '', '', '', ''),
-(9, 1, '', '', '', '', '', ''),
-(10, 1, '', '', '', '', '', ''),
-(10, 2, '', '', '', '', '', '');
+INSERT INTO `oc_manufacturer_description` (`manufacturer_id`, `language_id`, `description`, `meta_description`, `meta_keyword`, `meta_title`, `meta_h1`) VALUES
+(8, 1, '', '', '', '', ''),
+(8, 2, '', '', '', '', ''),
+(7, 1, '', '', '', '', ''),
+(7, 2, '', '', '', '', ''),
+(6, 2, '', '', '', '', ''),
+(5, 1, '', '', '', '', ''),
+(5, 2, '', '', '', '', ''),
+(6, 1, '', '', '', '', ''),
+(9, 2, '', '', '', '', ''),
+(9, 1, '', '', '', '', ''),
+(10, 1, '', '', '', '', ''),
+(10, 2, '', '', '', '', '');
 
 -- --------------------------------------------------------
 
