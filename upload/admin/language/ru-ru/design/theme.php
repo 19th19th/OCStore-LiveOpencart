@@ -12,7 +12,7 @@ $_['text_store']        = 'Магазин';
 $_['text_template']     = 'Шаблон';
 $_['text_default']      = 'По умолчанию';
 $_['text_history']      = 'История Шаблона';
-$_['text_twig']         = 'Редактор шаблонов использует Twig. Вы можете прочитать <a href="http://twig.sensiolabs.org/documentation" target="_blank" class="alert-link">Синтаксис Twig тут</a>.';
+$_['text_twig']         = 'Мы настоятельно не рекомендуем использовать редактор шаблонов, <a href="https://liveopencart.ru/docs-opencart3/03-design/redaktor-shablona/" target="_blank" class="alert-link">подробнее</a>.';
 
 // Column
 $_['column_store']      = 'Магазин';
