@@ -207,13 +207,10 @@ class ControllerBlogCategory extends Controller {
 				'limit'              => $limit
 			);
 			
-			
 			$article_total = $this->model_blog_article->getTotalArticles($article_data);
 
 			$results = $this->model_blog_article->getArticles($article_data);
 			
-			
-
 			foreach ($results as $result) {
 				if ($result['image']) {
 					$image = $this->model_tool_image->resize($result['image'], $this->config->get('configblog_image_article_width'), $this->config->get('configblog_image_article_height'));
@@ -291,7 +288,6 @@ class ControllerBlogCategory extends Controller {
 				);
 			}
 			
-			//OCSTORE.COM sort viewed
 			$data['sorts'][] = array(
 				'text'  => $this->language->get('text_viewed_asc'),
 				'value' => 'p.viewed-ASC',
@@ -303,7 +299,6 @@ class ControllerBlogCategory extends Controller {
 				'value' => 'p.viewed-DESC',
 				'href'  => $this->url->link('blog/category', 'blog_category_id=' . $this->request->get['blog_category_id'] . '&sort=p.viewed&order=DESC' . $url)
 			); 
-			//OCSTORE.COM sort viewed
 			
 			$url = '';
 

@@ -4,8 +4,10 @@
 
 class ControllerBlogMenu extends Controller {
 	public function index() {
-
 		$this->load->language('blog/menu');
+		
+		$this->load->model('blog/category');
+		$this->load->model('blog/article');
 		
 		$configblog_name = $this->config->get('configblog_name');
 		
@@ -18,11 +20,6 @@ class ControllerBlogMenu extends Controller {
 		$data['text_all'] = $this->language->get('text_all');
 
 		$data['blog'] = $this->url->link('blog/latest');
-
-		// Menu
-		$this->load->model('blog/category');
-
-		$this->load->model('blog/article');
 
 		$data['categories'] = array();
 
