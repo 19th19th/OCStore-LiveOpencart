@@ -4,11 +4,9 @@
 
 class ControllerBlogLatest extends Controller { 	
 	public function index() { 
-	
 		$this->load->language('blog/latest');
 
 		$this->load->model('blog/article');
-
 		$this->load->model('tool/image');
 
         if ($this->config->get('config_noindex_disallow_params')) {
@@ -27,7 +25,6 @@ class ControllerBlogLatest extends Controller {
 			$sort = 'p.date_added';
 		}
 		
-
 		if (isset($this->request->get['order'])) {
 			$order = $this->request->get['order'];
             if (!in_array('order', $disallow_params, true) && $this->config->get('config_noindex_status')) {
@@ -134,26 +131,24 @@ class ControllerBlogLatest extends Controller {
 
 		$data['articles'] = array();
 			
-			$article_data = array(
-				'sort'               => $sort,
-				'order'              => $order,
-				'start'              => ($page - 1) * $limit,
-				'limit'              => $limit
-			);
+		$article_data = array(
+			'sort'               => $sort,
+			'order'              => $order,
+			'start'              => ($page - 1) * $limit,
+			'limit'              => $limit
+		);
 					
-			$article_total = $this->model_blog_article->getTotalArticles($article_data); 
+		$article_total = $this->model_blog_article->getTotalArticles($article_data); 
 			
-			$results = $this->model_blog_article->getArticles($article_data);
+		$results = $this->model_blog_article->getArticles($article_data);
 			
-
 		foreach ($results as $result) {
-				if ($result['image']) {
-					$image = $this->model_tool_image->resize($result['image'], $this->config->get('configblog_image_article_width'), $this->config->get('configblog_image_article_height'));
-				} else {
-					$image = false;
-				}
+			if ($result['image']) {
+				$image = $this->model_tool_image->resize($result['image'], $this->config->get('configblog_image_article_width'), $this->config->get('configblog_image_article_height'));
+			} else {
+				$image = false;
+			}
 							
-				
 			if ($this->config->get('configblog_review_status')) {
 					$rating = (int)$result['rating'];
 				} else {
@@ -181,63 +176,63 @@ class ControllerBlogLatest extends Controller {
 
 		$data['sorts'] = array();
 			
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_default'),
-				'value' => 'p.sort_order-ASC',
-				'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=p.sort_order&order=ASC' . $url)
-			);
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_default'),
+			'value' => 'p.sort_order-ASC',
+			'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=p.sort_order&order=ASC' . $url)
+		);
 			
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_asc'),
-				'value' => 'pd.name-ASC',
-				'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=pd.name&order=ASC' . $url)
-			);
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_name_asc'),
+			'value' => 'pd.name-ASC',
+			'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=pd.name&order=ASC' . $url)
+		);
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_name_desc'),
-				'value' => 'pd.name-DESC',
-				'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=pd.name&order=DESC' . $url)
-			);
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_name_desc'),
+			'value' => 'pd.name-DESC',
+			'href'  => $this->url->link('blog/latest', 'blog_category_id=' . '&sort=pd.name&order=DESC' . $url)
+		);
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_date_asc'),
-				'value' => 'p.date_added-ASC',
-				'href'  => $this->url->link('blog/latest',  '&sort=p.date_added&order=ASC' . $url)
-			); 
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_date_asc'),
+			'value' => 'p.date_added-ASC',
+			'href'  => $this->url->link('blog/latest',  '&sort=p.date_added&order=ASC' . $url)
+		); 
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_date_desc'),
-				'value' => 'p.date_added-DESC',
-				'href'  => $this->url->link('blog/latest', '&sort=p.date_added&order=DESC' . $url)
-			); 
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_date_desc'),
+			'value' => 'p.date_added-DESC',
+			'href'  => $this->url->link('blog/latest', '&sort=p.date_added&order=DESC' . $url)
+		); 
 			
-			if ($this->config->get('configblog_review_status')) {
-				$data['sorts'][] = array(
-					'text'  => $this->language->get('text_rating_desc'),
-					'value' => 'rating-DESC',
-					'href'  => $this->url->link('blog/latest',  '&sort=rating&order=DESC' . $url)
-				); 
+		if ($this->config->get('configblog_review_status')) {
+			$data['sorts'][] = array(
+				'text'  => $this->language->get('text_rating_desc'),
+				'value' => 'rating-DESC',
+				'href'  => $this->url->link('blog/latest',  '&sort=rating&order=DESC' . $url)
+			); 
 				
-				$data['sorts'][] = array(
-					'text'  => $this->language->get('text_rating_asc'),
-					'value' => 'rating-ASC',
-					'href'  => $this->url->link('blog/latest',  '&sort=rating&order=ASC' . $url)
-				);
-			}
-
 			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_viewed_desc'),
-				'value' => 'p.viewed-DESC',
-				'href'  => $this->url->link('blog/latest',  '&sort=p.viewed&order=DESC' . $url)
+				'text'  => $this->language->get('text_rating_asc'),
+				'value' => 'rating-ASC',
+				'href'  => $this->url->link('blog/latest',  '&sort=rating&order=ASC' . $url)
 			);
+		}
 
-			$data['sorts'][] = array(
-				'text'  => $this->language->get('text_viewed_asc'),
-				'value' => 'p.viewed-ASC',
-				'href'  => $this->url->link('blog/latest',  '&sort=p.viewed&order=ASC' . $url)
-			); 
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_viewed_desc'),
+			'value' => 'p.viewed-DESC',
+			'href'  => $this->url->link('blog/latest',  '&sort=p.viewed&order=DESC' . $url)
+		);
+
+		$data['sorts'][] = array(
+			'text'  => $this->language->get('text_viewed_asc'),
+			'value' => 'p.viewed-ASC',
+			'href'  => $this->url->link('blog/latest',  '&sort=p.viewed&order=ASC' . $url)
+		); 
 			
-			$url = '';
+		$url = '';
 
 		if (isset($this->request->get['sort'])) {
 			$url .= '&sort=' . $this->request->get['sort'];
@@ -300,7 +295,6 @@ class ControllerBlogLatest extends Controller {
 		$data['header'] = $this->load->controller('common/header');
 		
 		$this->response->setOutput($this->load->view('blog/latest', $data));
-
 	}
 }
 ?>
