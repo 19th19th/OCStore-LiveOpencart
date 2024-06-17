@@ -179,7 +179,7 @@ class SeoPro {
                     $blog_path = '';
                     $article_id = $data['article_id'];
 
-                    if (isset($data['blog_category_id'])) {
+                    if (isset($data['blog_category_id']) || $this->config->get('config_seo_url_include_path')) {
                         $blog_path = $this->getBlogPathByArticle($article_id);
                     }
 
