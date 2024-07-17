@@ -95,23 +95,25 @@ class ControllerBlogCategory extends Controller {
 			$parts = explode('_', (string)$this->request->get['blog_category_id']);
 
 			$blog_category_id = (int)array_pop($parts);
+			
+			$blog_category_id_temp = 0;
 
-			foreach ($parts as $blog_category_id_id) {
-				if (!$blog_category_id) {
-					$blog_category_id = (int)$blog_category_id_id;
-				} else {
-					$blog_category_id .= '_' . (int)$blog_category_id_id;
-				}
+            foreach ($parts as $blog_category_id_id) {
+                if (!$blog_category_id_temp) {
+                    $blog_category_id_temp = (int)$blog_category_id_id;
+                } else {
+                    $blog_category_id_temp .= '_' . (int)$blog_category_id_id;
+                }
 
-				$category_info = $this->model_blog_category->getCategory($blog_category_id_id);
+                $category_info = $this->model_blog_category->getCategory($blog_category_id_id);
 
-				if ($category_info) {
-					$data['breadcrumbs'][] = array(
-						'text' => $category_info['name'],
-						'href' => $this->url->link('blog/category', 'blog_category_id=' . $blog_category_id . $url)
-					);
-				}
-			}
+                if ($category_info) {
+                    $data['breadcrumbs'][] = array(
+                        'text' => $category_info['name'],
+                        'href' => $this->url->link('blog/category', 'blog_category_id=' . $blog_category_id_temp . $url)
+                    );
+                }
+            }
 		} else {
 			$blog_category_id = 0;
 		}
