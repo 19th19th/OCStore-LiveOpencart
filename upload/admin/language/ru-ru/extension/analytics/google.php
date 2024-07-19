@@ -1,17 +1,17 @@
 <?php
-$_['heading_title']    = 'Google Analytics';
+$_['heading_title']    = 'Яндекс Метрика / Google Аналитика';
 
 // Text
-$_['text_extension']   = 'Extensions';
-$_['text_success']	   = 'Success: You have modified Google Analytics!';
-$_['text_edit']        = 'Edit Google Analytics';
-$_['text_signup']      = 'Login to your <a href="http://www.google.com/analytics/" target="_blank"><u>Google Analytics</u></a> account and after creating your website profile copy and paste the analytics code into this field.';
-$_['text_default']     = 'Default';
+$_['text_extension']   = 'Расширения';
+$_['text_success']	   = 'Настройки успешно изменены!';
+$_['text_edit']        = 'Редактирование';
+$_['text_signup']      = 'Зарегистрируйтесь или авторизуйтесь в <a href="https://metrika.yandex.ru/promo/product" target="_blank"><u>Яндекс Метрике</u></a> или <a href="http://www.google.com/analytics/" target="_blank"><u>Google Аналитике</u></a> для получения кода для отслеживания.';
+$_['text_default']     = 'По-умолчанию';
 
 // Entry
-$_['entry_code']       = 'Google Analytics Code';
-$_['entry_status']     = 'Status';
+$_['entry_code']       = 'Код Метрики / Аналитики';
+$_['entry_status']     = 'Статус';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify Google Analytics!';
-$_['error_code']	   = 'Code required!';
+$_['error_permission'] = 'Внимание: У вас недостаточно прав для изменеия настроек!';
+$_['error_code']	   = 'Код обязателен!';
