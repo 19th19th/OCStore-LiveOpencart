@@ -378,6 +378,7 @@ class ModelCatalogProduct extends Model {
 			$data['product_related_article'] = $this->getArticleRelated($product_id);
 			$data['product_reward'] = $this->getProductRewards($product_id);
 			$data['product_special'] = $this->getProductSpecials($product_id);
+			$data['main_category_id'] = $this->getProductMainCategoryId($product_id);
 			$data['product_category'] = $this->getProductCategories($product_id);
 			$data['product_download'] = $this->getProductDownloads($product_id);
 			$data['product_layout'] = $this->getProductLayouts($product_id);
