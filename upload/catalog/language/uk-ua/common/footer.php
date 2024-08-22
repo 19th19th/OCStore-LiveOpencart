@@ -18,4 +18,4 @@ $_['text_account']      = 'Особистий кабінет';
 $_['text_order']        = 'Історія замовлень';
 $_['text_wishlist']     = 'Закладки';
 $_['text_newsletter']   = 'Розсилка';
-$_['text_powered']      = 'Працює на <a target="_blank" href=""https://liveopencart.ru/?utm_source=ocstore3&utm_medium=front&utm_campaign=3039">OCStore LiveOpencart</a><br /> %s &copy; %s';
+$_['text_powered']      = 'Працює на <a target="_blank" href="https://liveopencart.ru/?utm_source=ocstore3&utm_medium=front&utm_campaign=3039">OCStore LiveOpencart</a><br /> %s &copy; %s';
