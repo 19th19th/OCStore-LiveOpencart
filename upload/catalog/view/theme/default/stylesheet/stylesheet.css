@@ -95,24 +95,13 @@ div.required .control-label:before {content:'* ';color: #f00;font-weight:700}
 }
 #cart .dropdown-menu li p {margin: 20px 0}
 
-#menu {margin:0 0 25px;background-color: #229ac8;min-height: 46px;border-radius:6px}
-#menu .nav > li > a {color: #fff;padding:12px 20px;min-height: 15px}
+#menu {margin:0 0 25px;background-color: #229ac8;min-height: 46px;border:none;border-radius:6px}
+#menu .nav > li > a {color: #fff;padding:13px 20px;min-height: 15px}
 #menu .nav > li > a:hover, #menu .nav > li.open > a {background-color: rgba(0, 0, 0, 0.1)}
-#menu .dropdown-menu {margin-top:1px;padding-bottom:0}
+#menu .dropdown-menu {padding-bottom:0}
 #menu .dropdown-inner {display: table}
-#menu .dropdown-inner ul {
-	display: table-cell;
-}
-#menu .dropdown-inner a {
-	min-width:250px;
-	display: block;
-	padding:5px 10px;
-	clear: both;
-	line-height: 20px;
-	color: #333333;
-	font-size: 12px;
-}
-
+#menu .dropdown-inner ul {display: table-cell}
+#menu .dropdown-inner a {min-width:250px;display: block;padding:5px 10px;clear: both;line-height: 20px;color: #333333;font-size: 12px}
 #menu li.dropdown > a:after{display:inline-block;content:'›';margin:0 0 0 10px;font-weight:700;color:inherit;transform:rotate(90deg)}
 #menu li.dropdown.open > a:after, #menu li.dropdown:hover > a:after{transform:rotate(-90deg)}
 #menu .dropdown-inner li a:hover {color:#229ac8;background:none}
