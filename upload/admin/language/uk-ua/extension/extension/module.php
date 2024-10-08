@@ -5,7 +5,7 @@ $_['heading_title']    = 'Модулі';
 
 // Text
 $_['text_success']     = 'Налаштування змінені';
-$_['text_layout']      = 'Після установки та налаштування модуля його необхідно додати в разділі <a href="%s" class="alert-link">Дизайн - Макети</a>';
+$_['text_layout']      = 'Після установки та налаштування модуля його необхідно додати в разділі <a href="%s" class="alert-link">Дизайн - Макети</a>. Ви можете придбати легальні модулі та шаблони на <a href="https://liveopencart.ru/?utm_source=ocstore3&utm_medium=extension&utm_campaign=3039" class="alert-link" target="new">liveopencart.ru</a>.';
 $_['text_add']         = 'Додати';
 $_['text_list']        = 'Список модулів';
 $_['text_hide_modules'] = 'У списку не показані модулі, які приховані в <a href="%s" class="alert-link">розділі управління правами користувачів</a>';
