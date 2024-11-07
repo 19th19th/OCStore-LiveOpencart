@@ -18,6 +18,7 @@ class SeoPro {
 	private $url;
 	private $session;
 	private $db;
+	private $cache;
 	private $cat_tree = [];
 	private $keywords = [];
 	private $queries = [];
@@ -410,7 +411,7 @@ class SeoPro {
 
 				$query = $this->db->query($sql);
 				
-				if($query->num_rows) {
+				if($query->num_rows && is_array($query->rows)) {
 					foreach($query->rows as $row) {
 						$this->keywords[$row['query']][$row['store_id']][$row['language_id']] = $row['keyword'];
 						$this->queries[$row['keyword']][$row['store_id']][$row['language_id']] = $row['query'];
