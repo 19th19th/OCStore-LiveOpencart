@@ -115,24 +115,33 @@ class Mail {
      *
      */
 	public function send() {
+		$config = new Config();
+		$config->load('default');
+		$log = new Log($config->get('error_filename'));
+		
 		if (!$this->to) {
-			throw new \Exception('Error: E-Mail to required!');
+			$log->write('Mail Error: E-Mail "to" required!');
+			return;
 		}
 
 		if (!$this->from) {
-			throw new \Exception('Error: E-Mail from required!');
+			$log->write('Mail Error: E-Mail "from" required!');
+			return;
 		}
 
 		if (!$this->sender) {
-			throw new \Exception('Error: E-Mail sender required!');
+			$log->write('Mail Error: E-Mail "sender" required!');
+			return;
 		}
 
 		if (!$this->subject) {
-			throw new \Exception('Error: E-Mail subject required!');
+			$log->write('Mail Error: E-Mail "subject" required!');
+			return;
 		}
 
-		if ((!$this->text) && (!$this->html)) {
-			throw new \Exception('Error: E-Mail message required!');
+		if (!$this->text && !$this->html) {
+			$log->write('Mail Error: E-Mail "message" required!');
+			return;
 		}
 		
 		foreach (get_object_vars($this) as $key => $value) {
