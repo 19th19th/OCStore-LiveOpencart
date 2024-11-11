@@ -88,7 +88,7 @@ class Smtp extends \stdClass {
 		$handle = fsockopen($hostname, $this->smtp_port, $errno, $errstr, $this->smtp_timeout);
 
 		if (!$handle) {
-			throw new \Exception('Error: ' . $errstr . ' (' . $errno . ')');
+			return $this->error('SMTP error: ' . $errstr . ' (' . $errno . ')');
 		} else {
 			if (substr(PHP_OS, 0, 3) != 'WIN') {
 				socket_set_timeout($handle, $this->smtp_timeout, 0);
@@ -118,40 +118,40 @@ class Smtp extends \stdClass {
 			}
 
 			if (substr($reply, 0, 3) != 250) {
-				throw new \Exception('Error: EHLO not accepted from server!');
+				return $this->error('SMTP error: EHLO not accepted from server!');
 			}
 
 			if (substr($this->smtp_hostname, 0, 3) == 'tls') {
 				fputs($handle, 'STARTTLS' . "\r\n");
 
-				$this->handleReply($handle, 220, 'Error: STARTTLS not accepted from server!');
+				$this->handleReply($handle, 220, 'SMTP error: STARTTLS not accepted from server!');
 
 				if (stream_socket_enable_crypto($handle, true, STREAM_CRYPTO_METHOD_TLS_CLIENT) !== true) {
-					throw new \Exception('Error: TLS could not be established!');
+					return $this->error('SMTP error: TLS could not be established!');
 				}
 
 				fputs($handle, 'EHLO ' . getenv('SERVER_NAME') . "\r\n");
 
-				$this->handleReply($handle, 250, 'Error: EHLO not accepted from server!');
+				$this->handleReply($handle, 250, 'SMTP error: EHLO not accepted from server!');
 			}
 
 			if (!empty($this->smtp_username) && !empty($this->smtp_password)) {
 				fputs($handle, 'AUTH LOGIN' . "\r\n");
 
-				$this->handleReply($handle, 334, 'Error: AUTH LOGIN not accepted from server!');
+				$this->handleReply($handle, 334, 'SMTP error: AUTH LOGIN not accepted from server!');
 
 				fputs($handle, base64_encode($this->smtp_username) . "\r\n");
 
-				$this->handleReply($handle, 334, 'Error: Username not accepted from server!');
+				$this->handleReply($handle, 334, 'SMTP error: Username not accepted from server!');
 
 				fputs($handle, base64_encode($this->smtp_password) . "\r\n");
 
-				$this->handleReply($handle, 235, 'Error: Password not accepted from server!');
+				$this->handleReply($handle, 235, 'SMTP error: Password not accepted from server!');
 
 			} else {
 				fputs($handle, 'HELO ' . getenv('SERVER_NAME') . "\r\n");
 
-				$this->handleReply($handle, 250, 'Error: HELO not accepted from server!');
+				$this->handleReply($handle, 250, 'SMTP error: HELO not accepted from server!');
 			}
 
 			if ($this->verp) {
@@ -160,7 +160,7 @@ class Smtp extends \stdClass {
 				fputs($handle, 'MAIL FROM: <' . $this->from . '>' . "\r\n");
 			}
 
-			$this->handleReply($handle, 250, 'Error: MAIL FROM not accepted from server!');
+			$this->handleReply($handle, 250, 'SMTP error: MAIL FROM not accepted from server!');
 
 			if (!is_array($this->to)) {
 				fputs($handle, 'RCPT TO: <' . $this->to . '>' . "\r\n");
@@ -168,7 +168,7 @@ class Smtp extends \stdClass {
 				$reply = $this->handleReply($handle, false, 'RCPT TO [!array]');
 
 				if ((substr($reply, 0, 3) != 250) && (substr($reply, 0, 3) != 251)) {
-					throw new \Exception('Error: RCPT TO not accepted from server!');
+					return $this->error('SMTP error: RCPT TO not accepted from server!');
 				}
 			} else {
 				foreach ($this->to as $recipient) {
@@ -177,14 +177,14 @@ class Smtp extends \stdClass {
 					$reply = $this->handleReply($handle, false, 'RCPT TO [array]');
 
 					if ((substr($reply, 0, 3) != 250) && (substr($reply, 0, 3) != 251)) {
-						throw new \Exception('Error: RCPT TO not accepted from server!');
+						return $this->error('SMTP error: RCPT TO not accepted from server!');
 					}
 				}
 			}
 
 			fputs($handle, 'DATA' . "\r\n");
 
-			$this->handleReply($handle, 354, 'Error: DATA not accepted from server!');
+			$this->handleReply($handle, 354, 'SMTP error: DATA not accepted from server!');
 
 			// According to rfc 821 we should not send more than 1000 including the CRLF
 			$message = str_replace("\r\n", "\n", $header . $message);
@@ -204,11 +204,11 @@ class Smtp extends \stdClass {
 
 			fputs($handle, '.' . "\r\n");
 
-			$this->handleReply($handle, 250, 'Error: DATA not accepted from server!');
+			$this->handleReply($handle, 250, 'SMTP error: DATA not accepted from server!');
 
 			fputs($handle, 'QUIT' . "\r\n");
 
-			$this->handleReply($handle, 221, 'Error: QUIT not accepted from server!');
+			$this->handleReply($handle, 221, 'SMTP error: QUIT not accepted from server!');
 
 			fclose($handle);
 		}
@@ -236,10 +236,15 @@ class Smtp extends \stdClass {
 
 		if ($status_code) {
 			if (substr($reply, 0, 3) != $status_code) {
-				throw new \Exception($error_text);
+				return $this->error($error_text);
 			}
 		}
 
 		return $reply;
 	}
+	
+	private function error($text) {
+		return user_error($text, E_USER_WARNING);
+	}
 }
+
