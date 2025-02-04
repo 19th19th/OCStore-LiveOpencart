@@ -170,7 +170,7 @@ footer h5 {margin:0 0 15px;font-weight:700;font-size:1.2em;px;color: #fff}
 .breadcrumb {margin: 0 0 20px 0;border-radius:6px;}
 .breadcrumb i {font-size: 15px}
 .breadcrumb > li {position: relative;white-space: nowrap}
-.breadcrumb > li + li:before {content: '»';padding: 0 6px;color:#666}
+.breadcrumb > li + li:before {content: '»';padding: 0 6px;color:#888}
 
 .dropdown-menu{min-width:250px;padding:10px;font-size:12px;border:none;border-radius:6px}
 .dropdown-menu > li > a, .dropdown-menu > li > button {padding:7px 10px;border-radius:4px}
@@ -315,9 +315,7 @@ html[dir=rtl] .breadcrumb > li::after {
 }
 
 .product-thumb {border: 1px solid #ddd;margin-bottom:25px;overflow: auto;border-radius:6px}
-.product-thumb .image {
-	text-align: center;
-}
+.product-thumb .image {text-align:center}
 .product-thumb .image a {
 	display: block;
 }
@@ -338,14 +336,13 @@ html[dir=rtl] .breadcrumb > li::after {
 }
 }
 .product-thumb h4 {}
-.product-thumb .caption {padding: 0 20px;min-height: 180px}
+.product-thumb .caption {padding: 0 15px;min-height: 180px}
 .product-list .product-thumb .caption {
 	margin-left: 230px;
 }
 @media (max-width: 1200px) {
 .product-grid .product-thumb .caption {
 	min-height: 210px;
-	padding: 0 10px;
 }
 }
 @media (max-width: 767px) {
@@ -378,30 +375,21 @@ html[dir=rtl] .breadcrumb > li::after {
 h2.price {
 	margin: 0;
 }
-.product-thumb .price {color: #444;font-size:1.4em;font-weight:600}
+
+.product-thumb .price {margin:0 0 15px;color: #444;font-size:1.4em;font-weight:600}
 .product-thumb .price-old {color: #999;text-decoration: line-through;margin-left: 10px}
 .product-thumb .price-tax {color:#999;font-weight:400;font-size:.65em;display:block;margin:5px 0 0}
-.product-thumb .button-group {border-top: 1px solid #ddd;background-color: #eee;overflow: auto}
-.product-list .product-thumb .button-group {border-left: 1px solid #ddd}
+.product-thumb .button-group {display:flex;padding:0 15px 15px;background:none;border:none}
+.product-thumb .button-group button{width:20%;margin:0 0 0 10px;font-weight:700;color:#777;background:#eee;height:32px;border:none;border-radius:4px}
+.product-thumb .button-group button:first-child{width:60%;margin:0 10px 0 0;color:#fff;background:#229ac8}
+.product-thumb .button-group button:hover {color: #444;background:#ddd}
+.product-thumb .button-group button:first-child:hover{color:#fff;background:#229ac8}
+.product-list .product-thumb .button-group {max-width:300px;padding-left:0}
 
 @media (max-width: 768px) {
-	.product-list .product-thumb .button-group {
-		border-left: none;
-	}
+	.product-list .product-thumb .button-group {padding-left:10px}
 }
-.product-thumb .button-group button {width: 60%;border: none;display: inline-block;float: left;background-color: #eee;
-	color:#666;
-	line-height: 38px;
-	font-weight:700;
-	text-align: center;
-}
-.product-thumb .button-group button + button {width:20%;color:#229ac8;border-left: 1px solid #ddd;background:#f7f7f7}
-.product-thumb .button-group button:hover {
-	color: #444;
-	background-color: #ddd;
-	text-decoration: none;
-	cursor: pointer;
-}
+
 @media (max-width: 1200px) {
 	.product-thumb .button-group button, .product-thumb .button-group button + button {
 		width: 33.33%;
