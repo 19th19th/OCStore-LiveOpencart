@@ -259,54 +259,41 @@ class SeoPro {
 					$product_id = (int)$value;
 					$queries[] = 'product_id=' . $product_id;
 					$postfix = true;
-				
 					unset($data[$key]);
-				
 					break;
 				case 'manufacturer_id':
 					$manufacturer_id = (int)$value;
 					$queries[] = 'manufacturer_id=' . $manufacturer_id;
 					$postfix = true;
-					
 					unset($data[$key]);
-					
 					break;
 				case 'category_id':
 				case 'information_id':
 					$information_id = (int)$value;
 					$queries[] = 'information_id=' . $information_id;
 					$postfix = true;
-					
 					unset($data[$key]);
-					
 					break;
 				case 'blog_category_id':
 					$blog_categories = explode('_', $value);
 					
 					foreach ($blog_categories as $blog_category_id) {
 						$queries[] = 'blog_category_id=' . (int)$blog_category_id;
-					}
-					
-					unset($data[$key]);
-					
+					}				
+					unset($data[$key]);			
 					break;
 				case 'article_id':
 					$article_id = (int)$value;
 					$queries[] = 'article_id=' . $article_id;
 					$postfix = true;
-					
-					unset($data[$key]);
-					
+					unset($data[$key]);			
 					break;
 				case 'path':
-					$categories = explode('_', $value);
-					
+					$categories = explode('_', $value);				
 					foreach ($categories as $category_id) {
 						$queries[] = 'category_id=' . (int)$category_id;
-					}
-					
-					unset($data[$key]);
-					
+					}					
+					unset($data[$key]);					
 					break;
 				default:
 					break;
