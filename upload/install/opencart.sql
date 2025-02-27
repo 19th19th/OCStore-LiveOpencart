@@ -830,8 +830,7 @@ CREATE TABLE `oc_currency` (
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1, 'Рубль', 'RUB', '', 'р.', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
 (2, 'US Dollar', 'USD', '$', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
-(3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21'),
-(4, 'Гривня', 'UAH', '', 'грн.', '2', 0.44016022, 1, '2017-07-19 21:28:21');
+(3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21');
 
 -----------------------------------------------------------
 
@@ -1623,8 +1622,7 @@ CREATE TABLE `oc_language` (
 
 INSERT INTO `oc_language` (`language_id`, `name`, `code`, `locale`, `image`, `directory`, `sort_order`, `status`) VALUES
 (1, 'Russian', 'ru-ru', 'ru_RU.UTF-8,ru_RU,russian', 'gb.png', 'english', 1, 1),
-(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1),
-(3, 'Українська', 'uk-ua', 'uk_UA.UTF-8,uk_UA,uk-ua,uk,ukrainian', 'uk-ua.png', 'uk-ua', 3, 0);
+(2, 'English', 'en-gb', 'en-US,en_US.UTF-8,en_US,en-gb,english', '', '', 2, 1);
 
 -----------------------------------------------------------
 
