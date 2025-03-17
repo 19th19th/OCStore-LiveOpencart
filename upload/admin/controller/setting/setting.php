@@ -907,7 +907,7 @@ class ControllerSettingSetting extends Controller {
         } elseif ($this->config->get('config_noindex_disallow_params')) {
             $data['config_noindex_disallow_params'] = $this->config->get('config_noindex_disallow_params');
         } else {
-            $data['config_noindex_disallow_params'] = "page";
+            $data['config_noindex_disallow_params'] = '';
         }
 
 		if (isset($this->request->post['config_file_max_size'])) {

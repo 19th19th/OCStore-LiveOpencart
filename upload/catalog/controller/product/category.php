@@ -7,20 +7,10 @@ class ControllerProductCategory extends Controller {
 		$this->load->language('product/category');
 
 		$this->load->model('catalog/category');
-
 		$this->load->model('catalog/product');
-
 		$this->load->model('tool/image');
 
-
-		$data['text_empty'] = $this->language->get('text_empty');
-
-        if ($this->config->get('config_noindex_disallow_params')) {
-            $params = explode ("\r\n", $this->config->get('config_noindex_disallow_params'));
-            if(!empty($params)) {
-                $disallow_params = $params;
-            }
-        }
+        $disallow_params = explode("\r\n", $this->config->get('config_noindex_disallow_params'));
 
 		if (isset($this->request->get['filter'])) {
 			$filter = $this->request->get['filter'];
