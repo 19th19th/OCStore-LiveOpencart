@@ -7,17 +7,10 @@ class ControllerBlogCategory extends Controller {
 		$this->load->language('blog/category');
 
 		$this->load->model('blog/category');
-
 		$this->load->model('blog/article');
-
 		$this->load->model('tool/image');
 
-        if ($this->config->get('config_noindex_disallow_params')) {
-            $params = explode ("\r\n", $this->config->get('config_noindex_disallow_params'));
-            if(!empty($params)) {
-                $disallow_params = $params;
-            }
-        }
+        $disallow_params = explode("\r\n", $this->config->get('config_noindex_disallow_params'));
 
 		if (isset($this->request->get['sort'])) {
 			$sort = $this->request->get['sort'];
