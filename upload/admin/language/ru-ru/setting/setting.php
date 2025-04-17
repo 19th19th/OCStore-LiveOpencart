@@ -176,12 +176,12 @@ $_['entry_sms_gate_username']  		   = 'Логин на SMS шлюз';
 $_['entry_sms_gate_password']  		   = 'Пароль на SMS шлюз';
 $_['entry_sms_alert']          		   = 'Включить SMS уведомления';
 $_['entry_sms_copy']           		   = 'Дополнительные номера';
-$_['entry_canonical_method']	       = 'Способ вывода тегов canonical, prev, next. <a target="_blank" href="https://opencartforum.com/topic/174539-sposob-vyvoda-tegov-canonical-prev-next-v-ocstore/">Подробнее</a>';
+$_['entry_canonical_method']	       = 'Способ вывода тегов canonical, prev, next';
 $_['entry_add_prevnext']	           = 'Вывести prev, next теги для пагинации';
 $_['entry_add_prevnext_help']	       = 'Работает только при включенном способе вывода тегов - ocStore решение';
 $_['entry_canonical_self']	           = 'Выводить тег canonical на основную страницу';
 $_['entry_canonical_self_help']	       = 'Работает только при включенном способе вывода тегов - ocStore решение';
-$_['entry_canonical_method_help']	   = 'Выберите способ согласно которого будет формироваться вывод тегов canonical, prev, next';
+$_['entry_canonical_method_help']	   = '1 - Оригинальный способ вывода тегов OpenCart - выводит canonical только на &page=1, на всех других страницах пагинации используется prev, next <br /> 2 - ocStore решение - полностью убирает prev, next и добавляет canonical на страницы с get параметрами';
 $_['entry_noindex_status']	           = 'Использовать noindex для категорий, производителей, товаров, статей и т д';
 $_['entry_noindex_disallow_params']	   = 'Игнорировать noindex для страниц с get параметрами:';
 
