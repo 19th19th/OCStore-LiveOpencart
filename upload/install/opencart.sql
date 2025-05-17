@@ -692,27 +692,14 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (11, 'Армения', 'AM', 'ARM', '', 0, 1),
 (15, 'Азербайджан', 'AZ', 'AZE', '', 0, 1),
 (20, 'Белоруссия (Беларусь)', 'BY', 'BLR', '', 0, 1),
-(44, 'China', 'CN', 'CHN', '', 0, 1),
-(53, 'Croatia', 'HR', 'HRV', '', 0, 1),
-(56, 'Czech Republic', 'CZ', 'CZE', '', 0, 1),
-(67, 'Estonia', 'EE', 'EST', '', 0, 1),
-(72, 'Finland', 'FI', 'FIN', '', 0, 1),
 (80, 'Грузия', 'GE', 'GEO', '', 0, 1),
 (109, 'Казахстан', 'KZ', 'KAZ', '', 0, 1),
 (115, 'Киргизия (Кыргызстан)', 'KG', 'KGZ', '', 0, 1),
-(117, 'Latvia', 'LV', 'LVA', '', 0, 1),
-(123, 'Lithuania', 'LT', 'LTU', '', 0, 1),
-(140, 'Молдова', 'MD', 'MDA', '', 0, 1),
 (176, 'Российская Федерация', 'RU', 'RUS', '', 0, 1),
-(189, 'Slovak Republic', 'SK', 'SVK', '', 0, 1),
-(190, 'Slovenia', 'SI', 'SVN', '', 0, 1),
 (207, 'Таджикистан', 'TJ', 'TJK', '', 0, 1),
-(215, 'Turkey', 'TR', 'TUR', '', 0, 1),
 (216, 'Туркменистан', 'TM', 'TKM', '', 0, 1),
 (220, 'Украина', 'UA', 'UKR', '', 0, 1),
-(226, 'Узбекистан', 'UZ', 'UZB', '', 0, 1),
-(243, 'Serbia', 'RS', 'SRB', '', 0, 1),
-(253, 'Kosovo, Republic of', 'XK', 'UNK', '', 0, 1);
+(226, 'Узбекистан', 'UZ', 'UZB', '', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -3550,7 +3537,21 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'module_blog_category', 'module_blog_category_status', '1', 0),
 (0, 'dashboard_chart_by_country_and_region', 'dashboard_chart_by_country_and_region_width', '6', '0'),
 (0, 'dashboard_chart_by_country_and_region', 'dashboard_chart_by_country_and_region_status', '1', '0'),
-(0, 'dashboard_chart_by_country_and_region', 'dashboard_chart_by_country_and_region_sort_order', '5', '0');
+(0, 'dashboard_chart_by_country_and_region', 
+'dashboard_chart_by_country_and_region_sort_order', '5', 0),
+(0, 'config', 'config_seo_pro', '1', 0),
+(0, 'config', 'config_seo_url_include_path', '0', 0),
+(0, 'config', 'config_seo_url_cache', '0', 0),
+(0, 'config', 'config_seopro_addslash', '0', 0),
+(0, 'config', 'config_seopro_lowercase', '0', 0),
+(0, 'config', 'config_page_postfix', '.html', 0),
+(0, 'config', 'config_valide_param_flag', '1', 0),
+(0, 'config', 'config_valide_params', 'tracking\\r\\nutm_source\\r\\nutm_campaign\\r\\nutm_medium\\r\\ntype\\r\\nsource\\r\\nblock\\r\\nposition\\r\\nkeyword\\r\\nyclid\\r\\ngclid', '0'),
+(0, 'config', 'config_canonical_method', '1', 0),
+(0, 'config', 'config_canonical_self', '1', 0),
+(0, 'config', 'config_add_prevnext', '0', 0),
+(0, 'config', 'config_noindex_status', '1', 0),
+(0, 'config', 'config_noindex_disallow_params', '', 0);															  
 
 
 
