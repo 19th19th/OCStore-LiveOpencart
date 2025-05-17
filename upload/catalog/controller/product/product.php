@@ -388,6 +388,20 @@ class ControllerProductProduct extends Controller {
 			} else {
 				$data['captcha'] = '';
 			}
+			
+			if ($this->config->get('config_account_id')) {
+				$this->load->model('catalog/information');
+
+				$information_info = $this->model_catalog_information->getInformation($this->config->get('config_account_id'));
+
+				if ($information_info) {
+					$data['text_agree'] = sprintf($this->language->get('text_agree'), $this->url->link('information/information/agree', 'information_id=' . $this->config->get('config_account_id'), true), $information_info['title']);
+				} else {
+					$data['text_agree'] = '';
+				}
+			} else {
+				$data['text_agree'] = '';
+			}
 
 			$data['share'] = $this->url->link('product/product', 'product_id=' . (int)$this->request->get['product_id']);
 
@@ -605,6 +619,16 @@ class ControllerProductProduct extends Controller {
 
 				if ($captcha) {
 					$json['error'] = $captcha;
+				}
+			}
+			
+			if ($this->config->get('config_account_id')) {
+				$this->load->model('catalog/information');
+
+				$information_info = $this->model_catalog_information->getInformation($this->config->get('config_account_id'));
+
+				if ($information_info && !isset($this->request->post['agree'])) {
+					$json['error'] = sprintf($this->language->get('error_agree'), $information_info['title']);
 				}
 			}
 
