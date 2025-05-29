@@ -1,5 +1,3 @@
------------------------------------------------------------
-
 --
 -- Database: `opencart`
 --
@@ -69,6 +67,13 @@ CREATE TABLE `oc_api` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+												
+  
+
+																								  
+																																																																																														  
+
+														   
 
 --
 -- Table structure for table `oc_api_ip`
@@ -83,6 +88,17 @@ CREATE TABLE `oc_api_ip` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+												   
+  
+
+															
+					   
+					   
+					 
+					   
+						
+
+														   
 
 --
 -- Table structure for table `oc_api_session`
@@ -106,6 +122,264 @@ CREATE TABLE `oc_api_session` (
 --
 
 DROP TABLE IF EXISTS `oc_attribute`;
+											   
+									
+								 
+											
+												   
+										   
+											
+															   
+																  
+									   
+										 
+							
+														
+
+  
+													
+  
+
+																																												  
+																												 
+																													  
+																													
+																													 
+
+														   
+
+  
+															 
+  
+
+													 
+								
+								 
+							   
+							  
+										   
+									   
+									 
+								  
+					  
+										   
+					 
+									 
+
+  
+																
+  
+
+																																									
+																																																																																																																																																																				
+																																																																																																																																																																																																										 
+																																																																																																																																																																																																																																																																																																																																																																																																	
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								
+																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+																																									 
+																																																																																																																																																																																												   
+																																														 
+
+														   
+
+  
+													   
+  
+
+											   
+													 
+								
+									
+										   
+								  
+									 
+
+														   
+
+  
+														 
+  
+
+												 
+								
+								
+										 
+									 
+
+  
+															
+  
+
+																	
+		   
+		   
+		   
+		   
+		   
+		   
+
+														   
+
+  
+															
+  
+
+													
+								
+									 
+											  
+									 
+
+  
+															   
+  
+
+																			
+		 
+		 
+		 
+		 
+
+														   
+
+  
+																 
+  
+
+														 
+								
+								
+										 
+									 
+
+  
+																	
+  
+
+																			
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+														   
+
+  
+															
+  
+
+													
+								
+								 
+										  
+									 
+
+  
+															   
+  
+
+																		
+		  
+		  
+		  
+		  
+		  
+
+														   
+
+  
+																  
+  
+
+														  
+								
+									  
+													   
+											   
+									 
+
+  
+																	 
+  
+
+																										 
+			 
+			 
+			 
+			 
+			 
+
+														   
+
+  
+															 
+  
+
+													 
+								
+								 
+										  
+									 
+
+														   
+
+  
+														   
+  
+
+												   
+								
+							  
+							   
+									   
+									 
+
+  
+															  
+  
+
+																				 
+			
+			
+			
+			
+
+														   
+
+  
+														  
+  
+
+												  
+								
+										  
+									   
+									 
+
+  
+															 
+  
+
+																   
+		 
+		 
+		 
+		 
+
+														   
+
+  
+												   
+  
+
 CREATE TABLE `oc_attribute` (
   `attribute_id` int(11) NOT NULL AUTO_INCREMENT,
   `attribute_group_id` int(11) NOT NULL,
@@ -287,6 +561,10 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 (150, 7, 2, 'MacBookAir', '', 'catalog/demo/banners/MacBookAir.jpg', 0),
 (151, 6, 1, 'MAMO Kitchen', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/manufacturer/mamo.png', 0),
 (152, 6, 2, 'MAMO Kitchen', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/manufacturer/mamo.png', 0);
+																																			
+																  
+																																										  
+									 
 
 -----------------------------------------------------------
 
@@ -294,7 +572,132 @@ INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `language_id`, `t
 -- Table structure for table `oc_cart`
 --
 
+											   
+													 
+									
+										   
+							
+						   
+										   
+							   
+											
+															   
+																  
+								  
+													   
+
+  
+														  
+  
+
+																																								   
+																										
+																									
+																								 
+
+														   
+
+  
+																   
+  
+
+														   
+									  
+								 
+										  
+							  
+										   
+									   
+									 
+								  
+												 
+					 
+									 
+
+  
+								   
+  
+
+																																										 
+									  
+																 
+									 
+																	
+									 
+									 
+
+														   
+
+  
+															
+  
+
 DROP TABLE IF EXISTS `oc_cart`;
+									  
+							 
+						   
+											
+									 
+
+  
+															   
+  
+
+																				   
+			
+			
+			
+			
+
+														   
+
+  
+																 
+  
+
+														 
+									  
+							  
+							   
+											 
+									 
+
+  
+																	
+  
+
+																							 
+		   
+		   
+		   
+
+														   
+
+  
+																
+  
+
+														
+									  
+							  
+											 
+									 
+
+  
+																   
+  
+
+																			   
+		
+		
+		
+
+														   
+
+  
+											  
+  
+
 CREATE TABLE `oc_cart` (
   `cart_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `api_id` int(11) NOT NULL,
@@ -310,6 +713,13 @@ CREATE TABLE `oc_cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+												 
+  
+
+																																				 
+																							  
+
+														   
 
 --
 -- Table structure for table `oc_category`
@@ -374,6 +784,7 @@ INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`,
 (56, '', 34, 0, 0, 0, 1, '2010-11-08 10:31:50', '2011-04-22 01:16:37', 1),
 (57, '', 0, 1, 1, 3, 1, '2011-04-26 08:53:16', '2025-03-31 11:57:15', 1),
 (58, '', 52, 0, 0, 0, 1, '2011-05-08 13:44:16', '2011-05-08 13:44:16', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -593,6 +1004,7 @@ CREATE TABLE `oc_googleshopping_category` (
   `category_id` int(11) NOT NULL,
   PRIMARY KEY (`google_product_category`,`store_id`),
   KEY `category_id_store_id` (`category_id`,`store_id`)
+										
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -----------------------------------------------------------
@@ -608,6 +1020,18 @@ CREATE TABLE `oc_category_to_layout` (
   `layout_id` int(11) NOT NULL,
   PRIMARY KEY (`category_id`,`store_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
 
 -----------------------------------------------------------
 
@@ -695,6 +1119,7 @@ INSERT INTO `oc_country` (`country_id`, `name`, `iso_code_2`, `iso_code_3`, `add
 (80, 'Грузия', 'GE', 'GEO', '', 0, 1),
 (109, 'Казахстан', 'KZ', 'KAZ', '', 0, 1),
 (115, 'Киргизия (Кыргызстан)', 'KG', 'KGZ', '', 0, 1),
+											   
 (176, 'Российская Федерация', 'RU', 'RUS', '', 0, 1),
 (207, 'Таджикистан', 'TJ', 'TJK', '', 0, 1),
 (216, 'Туркменистан', 'TM', 'TKM', '', 0, 1),
@@ -807,6 +1232,7 @@ INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbo
 (1, 'Рубль', 'RUB', '', 'р.', '2', 1.00000000, 1, '2017-07-19 22:28:03'),
 (2, 'US Dollar', 'USD', '$', '', '2', 0.01697793, 1, '2017-07-19 21:28:21'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.01476363, 1, '2017-07-19 21:28:21');
+																					 
 
 -----------------------------------------------------------
 
@@ -842,6 +1268,22 @@ CREATE TABLE `oc_customer` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+													 
+  
+
+																																																																								 
+																																																									  
+																																																					  
+																																																					   
+																																																						
+																																																				
+																																																				 
+																																																				  
+																																																				 
+																																																					  
+																																																				   
+
+														   
 
 --
 -- Table structure for table `oc_customer_activity`
@@ -965,7 +1407,37 @@ CREATE TABLE `oc_customer_history` (
 -- Table structure for table `oc_customer_login`
 --
 
+											 
+												   
+								 
+							
+								 
+								 
+				 
+													   
+
+  
+														
+  
+
+																						 
+											   
+											   
+												
+												
+											   
+											   
+												
+											  
+												 
+												
+
+														   
+
+  
 DROP TABLE IF EXISTS `oc_customer_login`;
+  
+
 CREATE TABLE `oc_customer_login` (
   `customer_login_id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(96) NOT NULL,
@@ -993,6 +1465,32 @@ CREATE TABLE `oc_customer_ip` (
   PRIMARY KEY (`customer_ip_id`),
   KEY `ip` (`ip`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+																										 
+																				  
+																			  
+																				
+																				 
+																			   
+																					
+																				
+																									 
+																				  
+																						 
+																									  
+																			   
+																				
+																									  
+																				
+																								 
+																								
+																						 
+																			   
+																								
+																								   
+																			   
+																				
+																				 
+																				 
 
 -----------------------------------------------------------
 
@@ -1072,7 +1570,22 @@ CREATE TABLE `oc_customer_search` (
 -- Table structure for table `oc_customer_wishlist`
 --
 
+													  
+															
+								 
+							  
+							  
+								  
+								 
+										 
+									 
+
+														   
+
+  
 DROP TABLE IF EXISTS `oc_customer_wishlist`;
+  
+
 CREATE TABLE `oc_customer_wishlist` (
   `customer_id` int(11) NOT NULL,
   `product_id` int(11) NOT NULL,
@@ -1081,6 +1594,14 @@ CREATE TABLE `oc_customer_wishlist` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+															  
+  
+
+																					 
+							   
+							   
+
+														   
 
 --
 -- Table structure for table `oc_custom_field`
@@ -1288,6 +1809,45 @@ INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `sort
 INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `sort_order`) VALUES
 (41, 'advertise_google', 'catalog/view/product/product/after', 'extension/advertise/google/google_dynamic_remarketing_product', 1, 0);
 INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `sort_order`) VALUES
+																																							
+																																								
+																																									 
+																																							 
+																																								  
+																																								 
+																																					  
+																																						  
+																																								  
+																																								 
+																																									 
+																																								  
+																																				  
+																																			 
+																																										  
+																																												  
+																																				 
+																																		  
+																																					 
+																																					  
+																																											 
+																																			 
+																																						
+																																						
+																																											
+																																												  
+																																									  
+																																											  
+																																								  
+																																										  
+																																					
+																																											
+																							 
+																																										
+																																								  
+																												
+																																								
+																																											  
+																														
 (42, 'advertise_google', 'catalog/view/product/search/after', 'extension/advertise/google/google_dynamic_remarketing_searchresults', 1, 0);
 INSERT INTO `oc_event` (`event_id`, `code`, `trigger`, `action`, `status`, `sort_order`) VALUES
 (43, 'advertise_google', 'catalog/view/product/category/after', 'extension/advertise/google/google_dynamic_remarketing_category', 1, 0);
@@ -1364,7 +1924,14 @@ INSERT INTO `oc_extension` (`extension_id`, `type`, `code`) VALUES
 (48, 'currency', 'cbr'),
 (49, 'currency', 'ecb'),
 (50, 'currency', 'nbu'),
+						 
+						  
+						 
 (51, 'dashboard', 'chart_by_country_and_region');
+							
+							   
+							 
+									
 
 -----------------------------------------------------------
 
@@ -1382,6 +1949,14 @@ CREATE TABLE `oc_extension_install` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+															  
+  
+
+																													 
+														
+														 
+
+														   
 
 --
 -- Table structure for table `oc_extension_path`
@@ -1397,6 +1972,444 @@ CREATE TABLE `oc_extension_path` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+														   
+  
+
+																										  
+												   
+																   
+														
+															 
+															   
+														 
+															  
+															   
+																	  
+																  
+																	   
+																 
+																	   
+																	   
+																	  
+																	  
+																	  
+																				 
+																			   
+																			   
+																			   
+																						  
+																			
+																		 
+																		 
+																		 
+																		 
+																		 
+																		 
+																																													 
+																			 
+																																						  
+																																					 
+																		 
+																				  
+																				 
+																				   
+																				  
+																			
+																		  
+																		  
+																				  
+																		
+																				
+																				
+																				
+																				
+																				
+																						 
+																				   
+																				
+																				
+																		  
+																		  
+																					
+																				
+																		   
+																		 
+																			 
+																					 
+																		
+																		  
+																		 
+																				   
+																	  
+																			 
+																				
+																			  
+																		  
+																	  
+																		
+																		 
+																			  
+																				   
+																				
+																		
+																			
+																			   
+																				 
+																			   
+																		 
+																		   
+																			 
+																			
+																				 
+																			
+																			   
+																		   
+																		   
+																			 
+																			 
+																			
+																			  
+																			 
+																		  
+																			   
+																			   
+																			   
+																			 
+																			
+																				 
+																			
+																						   
+																			
+																					
+																																												 
+																						 
+																			  
+																		   
+																	   
+																		 
+																		 
+																		   
+																		   
+																		
+																	  
+																		   
+																		 
+																	 
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	  
+																	 
+																	 
+																	 
+																	 
+																	 
+																	 
+																	 
+																																												  
+																																													 
+																																												 
+																			
+																		  
+																							
+																			   
+																			   
+																			   
+																				 
+																				 
+																				  
+																				  
+																				  
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				   
+																				 
+																				   
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																				 
+																					
+																			 
+																			  
+																		  
+																				
+																				
+																				
+																				
+																																		  
+																																												
+																			 
+																			  
+																			  
+																			  
+																				 
+																		
+																																												
+																																												
+																						  
+																				 
+																			   
+																					
+																			
+																							 
+																							 
+																							 
+																				  
+																				
+																				
+																				  
+																				  
+																				  
+																							 
+																					  
+																				 
+																				  
+																					 
+																					 
+																				  
+																				  
+																				  
+																				  
+																					  
+																			   
+																			   
+																				 
+																						  
+																					 
+																						
+																						
+																						
+																					  
+																						
+																						 
+																																												
+																	   
+																		
+																				
+																																												
+																		   
+																																		  
+																																												
+																																		  
+																																		  
+																			
+																				   
+																				   
+																				   
+																				   
+																				 
+																	   
+																		
+																		
+																		   
+																		   
+																		  
+																		   
+																						   
+																																			  
+																			 
+																			 
+																				
+																			 
+																			 
+																			 
+																																		  
+																			
+																			
+																			
+																		 
+																		   
+																		  
+																																		  
+																																										
+																																										
+																																										
+																			 
+																			  
+																					
+																				
+																			  
+																					  
+																		   
+																					   
+																					 
+																					 
+																				   
+																					  
+																					  
+																					  
+
+														   
 
 --
 -- Table structure for table `oc_filter`
@@ -1482,7 +2495,127 @@ INSERT INTO `oc_geo_zone` (`geo_zone_id`, `name`, `description`, `date_modified`
 -- Table structure for table `oc_information`
 --
 
+														 
+												 
+										  
+								 
+													 
+													   
+									 
+
+														   
+
+  
+																
+  
+
+														
+																		 
+									
+										  
+									   
+																						   
+											 
+										
+											 
+												 
+															 
+													 
+															
+								  
+								   
+									  
+																			 
+							   
+													   
+																					  
+																						   
+							  
+												
+											  
+															
+									 
+
+														   
+
+  
+									
+  
+
 DROP TABLE IF EXISTS `oc_information`;
+											
+										  
+														 
+									   
+									  
+									
+														
+															  
+									 
+
+														   
+
+  
+									
+  
+
+															   
+								
+										  
+														 
+														 
+									 
+
+														   
+
+  
+															   
+  
+
+													   
+														 
+										  
+												   
+										   
+												   
+						
+															 
+								 
+									  
+											 
+							 
+									 
+
+														   
+
+  
+															  
+  
+
+													  
+															
+							   
+										 
+									 
+
+														   
+
+  
+									 
+  
+
+																  
+											 
+								 
+													   
+									 
+
+														   
+
+  
+													 
+  
+
 CREATE TABLE `oc_information` (
   `information_id` int(11) NOT NULL AUTO_INCREMENT,
   `bottom` int(1) NOT NULL DEFAULT '0',
@@ -1501,6 +2634,7 @@ INSERT INTO `oc_information` (`information_id`, `bottom`, `sort_order`, `status`
 (4, 1, 1, 1, 0),
 (5, 1, 4, 1, 1),
 (6, 1, 2, 1, 1);
+				
 
 -- --------------------------------------------------------
 
@@ -1526,14 +2660,20 @@ CREATE TABLE `oc_information_description` (
 --
 
 INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
-(3, 1, 'Политика безопасности', '&lt;p&gt;Сайт использует сервис веб-аналитики Яндекс Метрика, предоставляемый \r\nкомпанией ООО «ЯНДЕКС», 119021, Россия, Москва, ул. Л. Толстого, 16 \r\n(далее&amp;nbsp;— Яндекс). Информация об использовании вами данного сайта будет \r\nпередаваться Яндексу и храниться на сервере Яндекса в ЕС и Российской \r\nФедерации. Яндекс будет обрабатывать эту информацию для оценки \r\nиспользования вами сайта, составления для нас отчетов о деятельности \r\nнашего сайта, и предоставления других услуг. Яндекс обрабатывает эту \r\nинформацию в порядке, установленном в условиях использования сервиса \r\nЯндекс Метрика. Используя сайт, вы соглашаетесь на обработку данных о \r\nвас Яндексом в порядке и целях, указанных выше.&lt;/p&gt;\r\n', '', '', '', ''),
+(3, 1, 'Политика безопасности', '&lt;div class=&quot;row mb-3&quot;&gt;\r\n                    &lt;div class=&quot;col&quot; style=&quot;border: solid 2px #eee; padding: 20px&quot;&gt;\r\n                        &lt;div id=&quot;inputResult&quot;&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h4&gt;&lt;strong&gt;Политика в&amp;nbsp;отношении обработки персональных данных&lt;/strong&gt;&lt;/h4&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;1. Общие положения&lt;/h5&gt;\r\n                                    &lt;div class=&quot;descr&quot;&gt;\r\n                                        Настоящая политика обработки персональных данных составлена\r\n                                        в&amp;nbsp;соответствии с&amp;nbsp;требованиями Федерального закона от&amp;nbsp;27.07.2006.\r\n                                        №&amp;nbsp;152-ФЗ «О&amp;nbsp;персональных данных» (далее&amp;nbsp;—\r\n                                        Закон о&amp;nbsp;персональных данных) и&amp;nbsp;определяет порядок обработки\r\n                                        персональных данных и&amp;nbsp;меры по&amp;nbsp;обеспечению безопасности персональных\r\n                                        данных, предпринимаемые &lt;span class=&quot;link mark owner-name-field&quot; id=&quot;owner-name-value&quot; data-scroll-to=&quot;#owner-name-field&quot;&gt;ООО ВАШЕ ООО&lt;/span&gt; (далее&amp;nbsp;— Оператор).\r\n                                    &lt;/div&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            1.1. Оператор ставит своей важнейшей целью и&amp;nbsp;условием осуществления\r\n                                            своей деятельности соблюдение прав и&amp;nbsp;свобод человека и&amp;nbsp;гражданина\r\n                                            при обработке его персональных данных, в&amp;nbsp;том числе защиты прав\r\n                                            на&amp;nbsp;неприкосновенность частной жизни, личную и&amp;nbsp;семейную тайну.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            1.2. Настоящая политика Оператора в&amp;nbsp;отношении обработки персональных\r\n                                            данных (далее&amp;nbsp;— Политика) применяется ко&amp;nbsp;всей информации,\r\n                                            которую Оператор может получить о&amp;nbsp;посетителях веб-сайта &lt;span class=&quot;link mark owner-site-url-field&quot; data-scroll-to=&quot;#owner-site-url-field&quot;&gt;https://вашсайт&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;2. Основные понятия, используемые в&amp;nbsp;Политике&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.1. Автоматизированная обработка персональных\r\n                                            данных&amp;nbsp;— обработка персональных данных с&amp;nbsp;помощью средств\r\n                                            вычислительной техники.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.2. Блокирование персональных данных&amp;nbsp;— временное прекращение\r\n                                            обработки персональных данных (за&amp;nbsp;исключением случаев, если обработка\r\n                                            необходима для уточнения персональных данных).\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.3. Веб-сайт&amp;nbsp;— совокупность графических и&amp;nbsp;информационных\r\n                                            материалов, а&amp;nbsp;также программ для ЭВМ и&amp;nbsp;баз данных, обеспечивающих\r\n                                            их&amp;nbsp;доступность в&amp;nbsp;сети интернет по&amp;nbsp;сетевому адресу &lt;span class=&quot;link mark owner-site-url-field&quot; data-scroll-to=&quot;#owner-site-url-field&quot;&gt;https://вашсайт&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.4. Информационная система персональных данных&amp;nbsp;— совокупность\r\n                                            содержащихся в&amp;nbsp;базах данных персональных данных и&amp;nbsp;обеспечивающих\r\n                                            их&amp;nbsp;обработку информационных технологий и&amp;nbsp;технических средств.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.5. Обезличивание персональных данных&amp;nbsp;— действия,\r\n                                            в&amp;nbsp;результате которых невозможно определить без использования\r\n                                            дополнительной информации принадлежность персональных данных конкретному\r\n                                            Пользователю или иному субъекту персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.6. Обработка персональных данных&amp;nbsp;— любое действие (операция)\r\n                                            или совокупность действий (операций), совершаемых с&amp;nbsp;использованием\r\n                                            средств автоматизации или без использования таких средств\r\n                                            с&amp;nbsp;персональными данными, включая сбор, запись, систематизацию,\r\n                                            накопление, хранение, уточнение (обновление, изменение), извлечение,\r\n                                            использование, передачу (распространение, предоставление, доступ),\r\n                                            обезличивание, блокирование, удаление, уничтожение персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.7. Оператор&amp;nbsp;— государственный орган, муниципальный орган,\r\n                                            юридическое или физическое лицо, самостоятельно или совместно с&amp;nbsp;другими\r\n                                            лицами организующие и/или&amp;nbsp;осуществляющие обработку персональных данных,\r\n                                            а&amp;nbsp;также определяющие цели обработки персональных данных, состав\r\n                                            персональных данных, подлежащих обработке, действия (операции), совершаемые\r\n                                            с&amp;nbsp;персональными данными.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;2.8. Персональные данные&amp;nbsp;— любая информация,\r\n                                            относящаяся прямо или косвенно к&amp;nbsp;определенному или определяемому\r\n                                            Пользователю веб-сайта &lt;span class=&quot;link mark owner-site-url-field&quot; data-scroll-to=&quot;#owner-site-url-field&quot;&gt;https://вашсайт&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.9. Персональные данные, разрешенные субъектом персональных данных для\r\n                                            распространения,&amp;nbsp;— персональные данные, доступ неограниченного\r\n                                            круга лиц к&amp;nbsp;которым предоставлен субъектом персональных данных путем\r\n                                            дачи согласия на&amp;nbsp;обработку персональных данных, разрешенных субъектом\r\n                                            персональных данных для распространения в&amp;nbsp;порядке, предусмотренном\r\n                                            Законом о&amp;nbsp;персональных данных (далее&amp;nbsp;— персональные данные,\r\n                                            разрешенные для распространения).\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.10. Пользователь&amp;nbsp;— любой посетитель веб-сайта &lt;span class=&quot;link mark owner-site-url-field&quot; data-scroll-to=&quot;#owner-site-url-field&quot;&gt;https://вашсайт&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.11. Предоставление персональных данных&amp;nbsp;— действия, направленные\r\n                                            на&amp;nbsp;раскрытие персональных данных определенному лицу или определенному\r\n                                            кругу лиц.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.12. Распространение персональных данных&amp;nbsp;— любые действия,\r\n                                            направленные на&amp;nbsp;раскрытие персональных данных неопределенному кругу лиц\r\n                                            (передача персональных данных) или на&amp;nbsp;ознакомление с&amp;nbsp;персональными\r\n                                            данными неограниченного круга лиц, в&amp;nbsp;том числе обнародование\r\n                                            персональных данных в&amp;nbsp;средствах массовой информации, размещение\r\n                                            в&amp;nbsp;информационно-телекоммуникационных сетях или предоставление доступа\r\n                                            к&amp;nbsp;персональным данным каким-либо иным способом.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.13. Трансграничная передача персональных данных&amp;nbsp;— передача\r\n                                            персональных данных на&amp;nbsp;территорию иностранного государства органу\r\n                                            власти иностранного государства, иностранному физическому или иностранному\r\n                                            юридическому лицу.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            2.14. Уничтожение персональных данных&amp;nbsp;— любые действия,\r\n                                            в&amp;nbsp;результате которых персональные данные уничтожаются безвозвратно\r\n                                            с&amp;nbsp;невозможностью дальнейшего восстановления содержания персональных\r\n                                            данных в&amp;nbsp;информационной системе персональных данных\r\n                                            и/или&amp;nbsp;уничтожаются\r\n                                            материальные носители персональных данных.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;3. Основные права и&amp;nbsp;обязанности Оператора&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;3.1. Оператор имеет право:&lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;получать от&amp;nbsp;субъекта персональных данных достоверные\r\n                                            информацию и/или&amp;nbsp;документы, содержащие персональные данные;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;в&amp;nbsp;случае отзыва субъектом персональных данных согласия\r\n                                            на&amp;nbsp;обработку персональных данных, а&amp;nbsp;также, направления обращения\r\n                                            с&amp;nbsp;требованием о&amp;nbsp;прекращении обработки персональных данных,\r\n                                            Оператор вправе продолжить обработку персональных данных без согласия\r\n                                            субъекта персональных данных при наличии оснований, указанных в&amp;nbsp;Законе\r\n                                            о&amp;nbsp;персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;самостоятельно определять состав и&amp;nbsp;перечень мер,\r\n                                            необходимых и&amp;nbsp;достаточных для обеспечения выполнения обязанностей,\r\n                                            предусмотренных Законом о&amp;nbsp;персональных данных и&amp;nbsp;принятыми\r\n                                            в&amp;nbsp;соответствии с&amp;nbsp;ним нормативными правовыми актами, если иное\r\n                                            не&amp;nbsp;предусмотрено Законом о&amp;nbsp;персональных данных или другими\r\n                                            федеральными законами.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;3.2. Оператор обязан:&lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;предоставлять субъекту персональных данных по&amp;nbsp;его просьбе\r\n                                            информацию, касающуюся обработки его персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;организовывать обработку персональных данных в&amp;nbsp;порядке,\r\n                                            установленном действующим законодательством&amp;nbsp;РФ;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;отвечать на&amp;nbsp;обращения и&amp;nbsp;запросы субъектов\r\n                                            персональных данных и&amp;nbsp;их&amp;nbsp;законных представителей\r\n                                            в&amp;nbsp;соответствии с&amp;nbsp;требованиями Закона о&amp;nbsp;персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;сообщать в&amp;nbsp;уполномоченный орган по&amp;nbsp;защите прав\r\n                                            субъектов персональных данных по&amp;nbsp;запросу этого органа необходимую\r\n                                            информацию в&amp;nbsp;течение 10&amp;nbsp;дней с&amp;nbsp;даты получения такого запроса;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;публиковать или иным образом обеспечивать неограниченный доступ\r\n                                            к&amp;nbsp;настоящей Политике в&amp;nbsp;отношении обработки персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;принимать правовые, организационные и&amp;nbsp;технические меры для\r\n                                            защиты персональных данных от&amp;nbsp;неправомерного или случайного доступа\r\n                                            к&amp;nbsp;ним, уничтожения, изменения, блокирования, копирования,\r\n                                            предоставления, распространения персональных данных, а&amp;nbsp;также\r\n                                            от&amp;nbsp;иных неправомерных действий в&amp;nbsp;отношении персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;прекратить передачу (распространение, предоставление, доступ)\r\n                                            персональных данных, прекратить обработку и&amp;nbsp;уничтожить персональные\r\n                                            данные в&amp;nbsp;порядке и&amp;nbsp;случаях, предусмотренных Законом\r\n                                            о&amp;nbsp;персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;исполнять иные обязанности, предусмотренные Законом\r\n                                            о&amp;nbsp;персональных данных.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;4. Основные права и&amp;nbsp;обязанности субъектов персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;4.1. Субъекты персональных данных имеют право:&lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;получать информацию, касающуюся обработки его персональных\r\n                                            данных, за&amp;nbsp;исключением случаев, предусмотренных федеральными законами.\r\n                                            Сведения предоставляются субъекту персональных данных Оператором\r\n                                            в&amp;nbsp;доступной форме, и&amp;nbsp;в&amp;nbsp;них не&amp;nbsp;должны содержаться\r\n                                            персональные данные, относящиеся к&amp;nbsp;другим субъектам персональных\r\n                                            данных, за&amp;nbsp;исключением случаев, когда имеются законные основания для\r\n                                            раскрытия таких персональных данных. Перечень информации и&amp;nbsp;порядок\r\n                                            ее&amp;nbsp;получения установлен Законом о&amp;nbsp;персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;требовать от&amp;nbsp;оператора уточнения его персональных данных,\r\n                                            их&amp;nbsp;блокирования или уничтожения в&amp;nbsp;случае, если персональные данные\r\n                                            являются неполными, устаревшими, неточными, незаконно полученными или\r\n                                            не&amp;nbsp;являются необходимыми для заявленной цели обработки, а&amp;nbsp;также\r\n                                            принимать предусмотренные законом меры по&amp;nbsp;защите своих прав;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;выдвигать условие предварительного согласия при обработке\r\n                                            персональных данных в&amp;nbsp;целях продвижения на&amp;nbsp;рынке товаров, работ\r\n                                            и&amp;nbsp;услуг;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;на&amp;nbsp;отзыв согласия на&amp;nbsp;обработку персональных данных,\r\n                                            а&amp;nbsp;также, на&amp;nbsp;направление требования о&amp;nbsp;прекращении обработки\r\n                                            персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;обжаловать в&amp;nbsp;уполномоченный орган по&amp;nbsp;защите прав\r\n                                            субъектов персональных данных или в&amp;nbsp;судебном порядке неправомерные\r\n                                            действия или бездействие Оператора при обработке его персональных данных;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;на&amp;nbsp;осуществление иных прав, предусмотренных\r\n                                            законодательством&amp;nbsp;РФ.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;4.2. Субъекты персональных данных обязаны:&lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;предоставлять Оператору достоверные данные о&amp;nbsp;себе;\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            —&amp;nbsp;сообщать Оператору об&amp;nbsp;уточнении (обновлении, изменении)\r\n                                            своих персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            4.3. Лица, передавшие Оператору недостоверные сведения о&amp;nbsp;себе, либо\r\n                                            сведения о&amp;nbsp;другом субъекте персональных данных без согласия последнего,\r\n                                            несут ответственность в&amp;nbsp;соответствии с&amp;nbsp;законодательством&amp;nbsp;РФ.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;5. Принципы обработки персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.1. Обработка персональных данных осуществляется на&amp;nbsp;законной\r\n                                            и&amp;nbsp;справедливой основе.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.2. Обработка персональных данных ограничивается достижением конкретных,\r\n                                            заранее определенных и&amp;nbsp;законных целей. Не&amp;nbsp;допускается обработка\r\n                                            персональных данных, несовместимая с&amp;nbsp;целями сбора персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.3. Не&amp;nbsp;допускается объединение баз данных, содержащих персональные\r\n                                            данные, обработка которых осуществляется в&amp;nbsp;целях, несовместимых между\r\n                                            собой.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.4. Обработке подлежат только персональные данные, которые отвечают целям\r\n                                            их&amp;nbsp;обработки.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.5. Содержание и&amp;nbsp;объем обрабатываемых персональных данных\r\n                                            соответствуют заявленным целям обработки. Не&amp;nbsp;допускается избыточность\r\n                                            обрабатываемых персональных данных по&amp;nbsp;отношению к&amp;nbsp;заявленным целям\r\n                                            их&amp;nbsp;обработки.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.6. При обработке персональных данных обеспечивается точность персональных\r\n                                            данных, их&amp;nbsp;достаточность, а&amp;nbsp;в&amp;nbsp;необходимых случаях\r\n                                            и&amp;nbsp;актуальность по&amp;nbsp;отношению к&amp;nbsp;целям обработки персональных\r\n                                            данных. Оператор принимает необходимые меры и/или&amp;nbsp;обеспечивает\r\n                                            их&amp;nbsp;принятие по&amp;nbsp;удалению или уточнению неполных или неточных\r\n                                            данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            5.7. Хранение персональных данных осуществляется в&amp;nbsp;форме, позволяющей\r\n                                            определить субъекта персональных данных, не&amp;nbsp;дольше, чем этого требуют\r\n                                            цели обработки персональных данных, если срок хранения персональных данных\r\n                                            не&amp;nbsp;установлен федеральным законом, договором, стороной которого,\r\n                                            выгодоприобретателем или поручителем по&amp;nbsp;которому является субъект\r\n                                            персональных данных. Обрабатываемые персональные данные уничтожаются либо\r\n                                            обезличиваются по&amp;nbsp;достижении целей обработки или в&amp;nbsp;случае утраты\r\n                                            необходимости в&amp;nbsp;достижении этих целей, если иное не&amp;nbsp;предусмотрено\r\n                                            федеральным законом.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;6. Цели обработки персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot; id=&quot;Y23UR8S&quot;&gt;\r\n                                                &lt;table class=&quot;purpose-table&quot;&gt;\r\n                                                    &lt;tbody&gt;&lt;tr&gt;\r\n                                                        &lt;th&gt;Цель обработки&lt;/th&gt;\r\n                                                        &lt;td class=&quot;purpose-field&quot;&gt;&lt;span class=&quot;mark link&quot;&gt;заключение, исполнение и&amp;nbsp;прекращение гражданско-правовых договоров&lt;/span&gt;&lt;/td&gt;\r\n                                                    &lt;/tr&gt;\r\n                                                    &lt;tr&gt;\r\n                                                        &lt;th&gt;Персональные данные&lt;/th&gt;\r\n                                                        &lt;td class=&quot;data-field&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;фамилия, имя, отчество&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;электронный адрес&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;номера телефонов&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;\r\n                                                    &lt;/tr&gt;\r\n                                                    &lt;tr&gt;\r\n                                                        &lt;th&gt;Правовые основания&lt;/th&gt;\r\n                                                        &lt;td class=&quot;legal-field&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;Федеральный закон «Об&amp;nbsp;информации, информационных технологиях и&amp;nbsp;о&amp;nbsp;защите информации» от&amp;nbsp;27.07.2006&amp;nbsp;N 149-ФЗ&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;\r\n                                                    &lt;/tr&gt;\r\n                                                    &lt;tr&gt;\r\n                                                        &lt;th&gt;Виды обработки персональных данных&lt;/th&gt;\r\n                                                        &lt;td class=&quot;types-field&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;Сбор, запись, систематизация, накопление, хранение, уничтожение и&amp;nbsp;обезличивание персональных данных&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span class=&quot;mark link&quot;&gt;Отправка информационных писем на&amp;nbsp;адрес электронной почты&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;\r\n                                                    &lt;/tr&gt;\r\n                                                &lt;/tbody&gt;&lt;/table&gt;\r\n                                            &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;7. Условия обработки персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.1. Обработка персональных данных осуществляется с&amp;nbsp;согласия субъекта\r\n                                            персональных данных на&amp;nbsp;обработку его персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.2. Обработка персональных данных необходима для достижения целей,\r\n                                            предусмотренных международным договором Российской Федерации или законом,\r\n                                            для осуществления возложенных законодательством Российской Федерации\r\n                                            на&amp;nbsp;оператора функций, полномочий и&amp;nbsp;обязанностей.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.3. Обработка персональных данных необходима для осуществления правосудия,\r\n                                            исполнения судебного акта, акта другого органа или должностного лица,\r\n                                            подлежащих исполнению в&amp;nbsp;соответствии с&amp;nbsp;законодательством\r\n                                            Российской Федерации об&amp;nbsp;исполнительном производстве.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.4. Обработка персональных данных необходима для исполнения договора,\r\n                                            стороной которого либо выгодоприобретателем или поручителем по&amp;nbsp;которому\r\n                                            является субъект персональных данных, а&amp;nbsp;также для заключения договора\r\n                                            по&amp;nbsp;инициативе субъекта персональных данных или договора,\r\n                                            по&amp;nbsp;которому субъект персональных данных будет являться\r\n                                            выгодоприобретателем или поручителем.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.5. Обработка персональных данных необходима для осуществления прав\r\n                                            и&amp;nbsp;законных интересов оператора или третьих лиц либо для достижения\r\n                                            общественно значимых целей при условии, что при этом не&amp;nbsp;нарушаются\r\n                                            права и&amp;nbsp;свободы субъекта персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.6. Осуществляется обработка персональных данных, доступ неограниченного\r\n                                            круга лиц к&amp;nbsp;которым предоставлен субъектом персональных данных либо\r\n                                            по&amp;nbsp;его просьбе (далее&amp;nbsp;— общедоступные персональные данные).\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            7.7. Осуществляется обработка персональных данных, подлежащих опубликованию\r\n                                            или обязательному раскрытию в&amp;nbsp;соответствии с&amp;nbsp;федеральным законом.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;\r\n                                        8. Порядок сбора, хранения, передачи и&amp;nbsp;других видов обработки персональных\r\n                                        данных\r\n                                    &lt;/h5&gt;\r\n                                    &lt;div class=&quot;descr&quot;&gt;\r\n                                        Безопасность персональных данных, которые обрабатываются Оператором,\r\n                                        обеспечивается путем реализации правовых, организационных и&amp;nbsp;технических\r\n                                        мер, необходимых для выполнения в&amp;nbsp;полном объеме требований действующего\r\n                                        законодательства в&amp;nbsp;области защиты персональных данных.\r\n                                    &lt;/div&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.1. Оператор обеспечивает сохранность персональных данных и&amp;nbsp;принимает\r\n                                            все возможные меры, исключающие доступ к&amp;nbsp;персональным данным\r\n                                            неуполномоченных лиц.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.2. Персональные данные Пользователя никогда, ни&amp;nbsp;при каких условиях\r\n                                            не&amp;nbsp;будут переданы третьим лицам, за&amp;nbsp;исключением случаев, связанных\r\n                                            с&amp;nbsp;исполнением действующего законодательства либо в&amp;nbsp;случае, если\r\n                                            субъектом персональных данных дано согласие Оператору на&amp;nbsp;передачу\r\n                                            данных третьему лицу для исполнения обязательств\r\n                                            по&amp;nbsp;гражданско-правовому договору.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.3. В&amp;nbsp;случае выявления неточностей в&amp;nbsp;персональных данных,\r\n                                            Пользователь может актуализировать их&amp;nbsp;самостоятельно, путем направления\r\n                                            Оператору уведомление на&amp;nbsp;адрес электронной почты Оператора &lt;span class=&quot;link mark owner-email-field&quot; data-scroll-to=&quot;#owner-email-field&quot;&gt;ваша почта&lt;/span&gt;\r\n                                            с&amp;nbsp;пометкой «Актуализация персональных данных».\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.4. Срок обработки персональных данных определяется достижением целей, для\r\n                                            которых были собраны персональные данные, если иной срок\r\n                                            не&amp;nbsp;предусмотрен договором или действующим\r\n                                            законодательством.\r\n                                            &lt;br&gt;\r\n                                            Пользователь может в&amp;nbsp;любой момент отозвать свое согласие\r\n                                            на&amp;nbsp;обработку персональных данных, направив Оператору уведомление\r\n                                            посредством электронной почты на&amp;nbsp;электронный адрес Оператора &lt;span class=&quot;link mark owner-email-field&quot; data-scroll-to=&quot;#owner-email-field&quot;&gt;ваша почта&lt;/span&gt;\r\n                                            с&amp;nbsp;пометкой «Отзыв согласия на&amp;nbsp;обработку персональных\r\n                                            данных».\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.5. Вся информация, которая собирается сторонними сервисами, в&amp;nbsp;том\r\n                                            числе платежными системами, средствами связи и&amp;nbsp;другими поставщиками\r\n                                            услуг, хранится и&amp;nbsp;обрабатывается указанными лицами (Операторами)\r\n                                            в&amp;nbsp;соответствии с&amp;nbsp;их&amp;nbsp;Пользовательским соглашением\r\n                                            и&amp;nbsp;Политикой конфиденциальности. Субъект персональных данных\r\n                                            и/или&amp;nbsp;с&amp;nbsp;указанными документами. Оператор не&amp;nbsp;несет\r\n                                            ответственность за&amp;nbsp;действия третьих лиц, в&amp;nbsp;том числе указанных\r\n                                            в&amp;nbsp;настоящем пункте поставщиков услуг.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.6. Установленные субъектом персональных данных запреты на&amp;nbsp;передачу\r\n                                            (кроме предоставления доступа), а&amp;nbsp;также на&amp;nbsp;обработку или условия\r\n                                            обработки (кроме получения доступа) персональных данных, разрешенных для\r\n                                            распространения, не&amp;nbsp;действуют в&amp;nbsp;случаях обработки персональных\r\n                                            данных в&amp;nbsp;государственных, общественных и&amp;nbsp;иных публичных интересах,\r\n                                            определенных законодательством&amp;nbsp;РФ.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.7. Оператор при обработке персональных данных обеспечивает\r\n                                            конфиденциальность персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.8. Оператор осуществляет хранение персональных данных в&amp;nbsp;форме,\r\n                                            позволяющей определить субъекта персональных данных, не&amp;nbsp;дольше, чем\r\n                                            этого требуют цели обработки персональных данных, если срок хранения\r\n                                            персональных данных не&amp;nbsp;установлен федеральным законом, договором,\r\n                                            стороной которого, выгодоприобретателем или поручителем по&amp;nbsp;которому\r\n                                            является субъект персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            8.9. Условием прекращения обработки персональных данных может являться\r\n                                            достижение целей обработки персональных данных, истечение срока действия\r\n                                            согласия субъекта персональных данных, отзыв согласия субъектом персональных\r\n                                            данных или требование о&amp;nbsp;прекращении обработки персональных данных,\r\n                                            а&amp;nbsp;также выявление неправомерной обработки персональных данных.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;\r\n                                        9. Перечень действий, производимых Оператором с&amp;nbsp;полученными персональными\r\n                                        данными\r\n                                    &lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            9.1. Оператор осуществляет сбор, запись, систематизацию, накопление,\r\n                                            хранение, уточнение (обновление, изменение), извлечение, использование,\r\n                                            передачу (распространение, предоставление, доступ), обезличивание,\r\n                                            блокирование, удаление и&amp;nbsp;уничтожение персональных данных.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            9.2. Оператор осуществляет автоматизированную обработку персональных данных\r\n                                            с&amp;nbsp;получением и/или&amp;nbsp;передачей полученной информации\r\n                                            по&amp;nbsp;информационно-телекоммуникационным сетям или без таковой.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;10. Трансграничная передача персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            10.1. Оператор до&amp;nbsp;начала осуществления деятельности\r\n                                            по&amp;nbsp;трансграничной передаче персональных данных обязан уведомить\r\n                                            уполномоченный орган по&amp;nbsp;защите прав субъектов персональных данных\r\n                                            о&amp;nbsp;своем намерении осуществлять трансграничную передачу персональных\r\n                                            данных (такое уведомление направляется отдельно от&amp;nbsp;уведомления\r\n                                            о&amp;nbsp;намерении осуществлять обработку персональных данных).\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            10.2. Оператор до&amp;nbsp;подачи вышеуказанного уведомления, обязан получить\r\n                                            от&amp;nbsp;органов власти иностранного государства, иностранных физических лиц,\r\n                                            иностранных юридических лиц, которым планируется трансграничная передача\r\n                                            персональных данных, соответствующие сведения.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;11. Конфиденциальность персональных данных&lt;/h5&gt;\r\n                                    &lt;div class=&quot;descr&quot;&gt;\r\n                                        Оператор и&amp;nbsp;иные лица, получившие доступ к&amp;nbsp;персональным данным, обязаны\r\n                                        не&amp;nbsp;раскрывать третьим лицам и&amp;nbsp;не&amp;nbsp;распространять персональные\r\n                                        данные без согласия субъекта персональных данных, если иное\r\n                                        не&amp;nbsp;предусмотрено федеральным законом.\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                            &lt;div class=&quot;row mb-4&quot;&gt;\r\n                                &lt;div class=&quot;col&quot;&gt;\r\n                                    &lt;h5&gt;12. Заключительные положения&lt;/h5&gt;\r\n                                    &lt;div class=&quot;ol&quot;&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            12.1. Пользователь может получить любые разъяснения по&amp;nbsp;интересующим\r\n                                            вопросам, касающимся обработки его персональных данных, обратившись\r\n                                            к&amp;nbsp;Оператору с&amp;nbsp;помощью электронной почты &lt;span class=&quot;link mark owner-email-field&quot; data-scroll-to=&quot;#owner-email-field&quot;&gt;ваша почта&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            12.2. В&amp;nbsp;данном документе будут отражены любые изменения политики\r\n                                            обработки персональных данных Оператором. Политика действует бессрочно\r\n                                            до&amp;nbsp;замены ее&amp;nbsp;новой версией.\r\n                                        &lt;/div&gt;\r\n                                        &lt;div class=&quot;li&quot;&gt;\r\n                                            12.3. Актуальная версия Политики в&amp;nbsp;свободном доступе расположена\r\n                                            в&amp;nbsp;сети Интернет по&amp;nbsp;адресу &lt;span id=&quot;owner-privacy-url-value&quot; class=&quot;link mark owner-privacy-url-field&quot; data-scroll-to=&quot;#owner-privacy-url-field&quot;&gt;https://вашсайт/privacy&lt;/span&gt;.\r\n                                        &lt;/div&gt;\r\n                                    &lt;/div&gt;\r\n                                &lt;/div&gt;\r\n                            &lt;/div&gt;\r\n                        &lt;/div&gt;\r\n                    &lt;/div&gt;\r\n                &lt;/div&gt;&lt;p&gt;&lt;/p&gt;\r\n', '', '', '', '');
+INSERT INTO `oc_information_description` (`information_id`, `language_id`, `title`, `description`, `meta_title`, `meta_description`, `meta_keyword`, `meta_h1`) VALUES
+
+																				  
 (3, 2, 'Privacy Policy', '&lt;p&gt;Privacy Policy&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (4, 1, 'О нас', '&lt;p&gt;О нас&lt;br&gt;&lt;/p&gt;\r\n', '', '', '', ''),
 (4, 2, 'About Us', '&lt;p&gt;About Us&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (5, 1, 'Условия соглашения', '&lt;p&gt;\r\n Условия соглашения&lt;/p&gt;\r\n', '', '', '', ''),
 (5, 2, 'Terms &amp; Conditions', '&lt;p&gt;Terms &amp;amp; Conditions&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
 (6, 1, 'Информация о доставке', '&lt;p&gt;\r\n Информация о доставке&lt;/p&gt;\r\n', '', '', '', ''),
-(6, 2, 'Delivery Information', '&lt;p&gt;Delivery Information&lt;br&gt;&lt;/p&gt;', '', '', '', '');
+(6, 2, 'Delivery Information', '&lt;p&gt;Delivery Information&lt;br&gt;&lt;/p&gt;', '', '', '', ''),
+(7, 1, 'Политика cookie', 'Мы используем файлы cookie для улучшения работы сайта, анализа его использования и предоставления пользователям персонализированного контента. Мы также используем файлы cookie для рекламы и маркетинга. Вы можете изменить настройки браузера и отказаться от использования файлов cookie. Если вы не согласны с использованием файлов cookie, вы можете прекратить использование нашего сайта. Более подробная информация о файлах cookie и их использовании приведена в &lt;a href=&quot;/privacy&quot; target=&quot;_blank&quot;&gt;нашей политике конфиденциальности&lt;/a&gt;.', '', '', '', ''),
+(7, 2, 'Cookie Policy', ' We use cookies to improve website performance, analyze its usage, and provide personalized content to users. We also use cookies for advertising and marketing purposes. You can change your browser settings to refuse the use of cookies. If you do not agree with the use of cookies, you may stop using our website. More detailed information about cookies and how we use them is available in our &lt;a href=&quot;/privacy&quot; target=&quot;_blank&quot;&gt;Privacy Policy&lt;/a&gt;.', '', '', '', '');
+
 
 -- --------------------------------------------------------
 
@@ -1550,7 +2690,15 @@ CREATE TABLE `oc_information_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																						 
+		  
 
+
+														   
+
+  
+															  
+  
 --
 -- Table structure for table `oc_information_to_store`
 --
@@ -1571,6 +2719,7 @@ INSERT INTO `oc_information_to_store` (`information_id`, `store_id`) VALUES
 (4, 0),
 (5, 0),
 (6, 0);
+
 
 -----------------------------------------------------------
 
@@ -1675,11 +2824,17 @@ INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `positi
 (79, 15, 'blog_featured.33', 'content_bottom', 0),
 (80, 16, 'blog_category', 'column_left', 0),
 (81, 16, 'blog_featured.33', 'column_left', 1),
+												 
+												  
 (84, 3, 'featured_article.34', 'column_left', 2),
 (85, 3, 'featured_product.35', 'column_left', 3),
 (86, 17, 'featured_article.34', 'column_left', 0),
 (87, 17, 'featured_product.35', 'column_left', 1),
 (88, 2, 'featured_article.34', 'content_bottom', 0);
+										
+
+														   
+
 
 -----------------------------------------------------------
 
@@ -1708,12 +2863,16 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (20, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
+			   
 (31, 8, 0, 'information/contact'),
 (32, 9, 0, 'information/sitemap'),
 (34, 4, 0, ''),
+							   
+							  
 (45, 5, 0, 'product/manufacturer'),
 (52, 12, 0, 'product/compare'),
 (53, 13, 0, 'product/search'),
+										 
 (57, 14, 0, 'blog/latest'),
 (58, 15, 0, 'blog/category'),
 (56, 16, 0, 'blog/article'),
@@ -1862,6 +3021,7 @@ DROP TABLE IF EXISTS `oc_manufacturer_to_store`;
 CREATE TABLE `oc_manufacturer_to_store` (
   `manufacturer_id` int(11) NOT NULL,
   `store_id` int(11) NOT NULL,
+
   PRIMARY KEY (`manufacturer_id`,`store_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
@@ -1890,6 +3050,18 @@ CREATE TABLE `oc_manufacturer_to_layout` (
   `layout_id` int(11) NOT NULL,
   PRIMARY KEY (`manufacturer_id`,`store_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  
+
+																			 
+	   
+	   
+	   
+	   
+	   
+		
+
+														   
+
 
 -- --------------------------------------------------------
 
@@ -1929,6 +3101,8 @@ CREATE TABLE `oc_modification` (
   PRIMARY KEY (`modification_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+															 
+  
 --
 -- Table structure for table `oc_modification_backup`
 --
@@ -1946,6 +3120,7 @@ CREATE TABLE `oc_modification_backup` (
 -------------------------------------------------------------
 
 -- Table structure for table `oc_module`
+										
 --
 
 DROP TABLE IF EXISTS `oc_module`;
@@ -1966,11 +3141,13 @@ INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
 (29, 'Home Page', 'carousel', '{"name":"Home Page","banner_id":"8","width":"130","height":"100","status":"1"}'),
 (28, 'Home Page', 'featured', '{"name":"Home Page","product":["43","40","42","30"],"limit":"4","width":"200","height":"200","status":"1"}'),
 (27, 'Home Page', 'slideshow', '{"name":"Home Page","banner_id":"7","width":"1140","height":"380","status":"1"}'),
+																																																																																									
 (31, 'Banner 1', 'banner', '{"name":"Banner 1","banner_id":"6","width":"182","height":"182","status":"1"}'),
 (32, 'Последние статьи', 'blog_latest', '{"name":"\\u041f\\u043e\\u0441\\u043b\\u0435\\u0434\\u043d\\u0438\\u0435 \\u0441\\u0442\\u0430\\u0442\\u044c\\u0438","limit":"4","width":"200","height":"200","status":"1"}'),
 (33, 'Рекомендуемые статьи', 'blog_featured', '{"name":"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0441\\u0442\\u0430\\u0442\\u044c\\u0438","article_name":"","article":["120","123","125","124"],"limit":"4","width":"200","height":"200","status":"1"}'),
 (34, 'Рекомендуемые статьи в товаре, категории и производителе', 'featured_article', '{"name":"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0441\\u0442\\u0430\\u0442\\u044c\\u0438 \\u0432 \\u0442\\u043e\\u0432\\u0430\\u0440\\u0435, \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 \\u0438 \\u043f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u0435","limit":"4","width":"200","height":"200","status":"1"}'),
 (35, 'Рекомендуемые товары в категории и производителе', 'featured_product', '{"name":"\\u0420\\u0435\\u043a\\u043e\\u043c\\u0435\\u043d\\u0434\\u0443\\u0435\\u043c\\u044b\\u0435 \\u0442\\u043e\\u0432\\u0430\\u0440\\u044b \\u0432 \\u043a\\u0430\\u0442\\u0435\\u0433\\u043e\\u0440\\u0438\\u0438 \\u0438 \\u043f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u0435","limit":"4","width":"200","height":"200","status":"1"}');
+
 
 -----------------------------------------------------------
 
@@ -2202,7 +3379,18 @@ CREATE TABLE `oc_order` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																																																																																																																																																																																																																																																																																																											
+																																																																																																																																																																																																									
 
+																																																																																																																																																																																																																																																																							 
+																																																																																																																																																																																																			 
+																																																																																																																																																																																																																								 
+
+														   
+
+  
+													   
+  
 --
 -- Table structure for table `oc_order_history`
 --
@@ -2219,6 +3407,21 @@ CREATE TABLE `oc_order_history` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																															
+										
+										
+										
+										
+										
+										
+										
+										
+										
+
+														   
+
+  
+													  
 
 --
 -- Table structure for table `oc_order_option`
@@ -2260,7 +3463,18 @@ CREATE TABLE `oc_order_product` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																																					
+																	  
 
+																			
+																	  
+																	  
+
+														   
+
+  
+														 
+  
 --
 -- Table structure for table `oc_order_recurring`
 --
@@ -2368,13 +3582,22 @@ CREATE TABLE `oc_order_status` (
 --
 
 INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
+					 
+							   
 (2, 1, 'В обработке'),
+										  
 (3, 1, 'Доставлено'),
 (7, 1, 'Отменено'),
 (5, 1, 'Сделка завершена'),
+						 
+				 
+													 
 (8, 1, 'Возврат'),
+								  
 (9, 1, 'Отмена и аннулирование'),
+								  
 (10, 1, 'Неудавшийся'),
+			
 (11, 1, 'Возмещенный'),
 (12, 1, 'Полностью измененный'),
 (13, 1, 'Полный возврат'),
@@ -2390,9 +3613,12 @@ INSERT INTO `oc_order_status` (`order_status_id`, `language_id`, `name`) VALUES
 (9, 2, 'Canceled Reversal'),
 (7, 2, 'Canceled'),
 (12, 2, 'Reversed'),
+				   
 (13, 2, 'Chargeback'),
 (5, 2, 'Complete'),
 (14, 2, 'Expired'),
+				  
+	  
 (16, 1, 'Анулированный'),
 (16, 2, 'Voided'),
 (15, 2, 'Processed');
@@ -2416,6 +3642,32 @@ CREATE TABLE `oc_order_total` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																										  
+											   
+												   
+										  
+										   
+											   
+												   
+										  
+										   
+											   
+																									  
+										   
+											
+												
+																									  
+										   
+											
+												
+																									  
+										   
+											
+
+														   
+
+  
+													   
 
 --
 -- Table structure for table `oc_order_voucher`
@@ -2871,7 +4123,75 @@ INSERT INTO `oc_product_related` (`product_id`, `related_id`) VALUES
 -- Table structure for table `oc_product_reward`
 --
 
+										 
+									 
+
+  
+																	
+  
+
+																			
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+														   
+
+  
+															
+  
+
+													
+								
+									
 DROP TABLE IF EXISTS `oc_product_reward`;
+
+  
+															   
+  
+
+																			
+		
+		
+		
+		
+
+														   
+
+  
+															
+  
+
+													
+								
+								
+									 
+
+  
+															   
+  
+
+																		
+		 
+		 
+		 
+		 
+		 
+		 
+
+														   
+
+  
+														
+  
+
+												
+													  
+											
 CREATE TABLE `oc_product_reward` (
   `product_reward_id` int(11) NOT NULL AUTO_INCREMENT,
   `product_id` int(11) NOT NULL DEFAULT '0',
@@ -3016,7 +4336,32 @@ CREATE TABLE `oc_product_to_layout` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																				 
+		   
 
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+
+														   
+
+  
+														  
+  
 --
 -- Table structure for table `oc_product_to_store`
 --
@@ -3140,7 +4485,9 @@ CREATE TABLE `oc_return_action` (
 
 INSERT INTO `oc_return_action` (`return_action_id`, `language_id`, `name`) VALUES
 (1, 1, 'Возмещенный'),
+											
 (2, 1, 'Возврат средств'),
+						   
 (3, 1, 'Отправлена замена'),
 (1, 2, 'Refunded'),
 (3, 2, 'Replacement Sent'),
@@ -3216,7 +4563,9 @@ INSERT INTO `oc_return_status` (`return_status_id`, `language_id`, `name`) VALUE
 (3, 1, 'Выполнен'),
 (2, 1, 'Ожидание товара'),
 (1, 2, 'Pending'),
+				   
 (2, 2, 'Awaiting Products'),
+														   
 (3, 2, 'Complete');
 
 -- --------------------------------------------------------
@@ -3345,6 +4694,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_customer_group_display', '["1"]', 1),
 (0, 'config', 'config_customer_price', '0', 0),
 (0, 'config', 'config_account_id', '3', 0),
+(0, 'config', 'config_cookie_id', '7', 0),
 (0, 'config', 'config_invoice_prefix', CONCAT('INV-', YEAR(CURDATE()), '-00'), 0),
 (0, 'config', 'config_api_id', '1', 0),
 (0, 'config', 'config_cart_weight', '1', 0),
@@ -3726,6 +5076,18 @@ CREATE TABLE `oc_translation` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+					   
+						   
+										   
+															   
+																  
+									
+								 
+													   
+
+  
+														   
+  
 
 --
 -- Table structure for table `oc_upload`
@@ -3977,6 +5339,8 @@ INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `key
 (1254, 0, 1, 'product_id=28', 'electric-kettle'),
 (1255, 0, 2, 'product_id=28', 'en_electric-kettle');
 
+  
+
 -- --------------------------------------------------------
 
 --
@@ -3984,7 +5348,882 @@ INSERT INTO `oc_seo_url` (`seo_url_id`, `store_id`, `language_id`, `query`, `key
 --
 
 DROP TABLE IF EXISTS `oc_user`;
+									 
+
+  
+													
+  
+
+																
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																																						
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																									 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																									   
+																																		 
+																																																						
+																																		 
+																																							 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+															
+																																		 
+															
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+															
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																																					
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																																						
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+															
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																																																																																																																																																																																																																																																																																																																																										  
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+															
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+																																		 
+
+														   
+
+  
+												 
+  
+
+										 
+											   
+										  
+							   
+							  
+						
+								   
+							
+														 
+
+  
+													
+  
+
+																								
+																		 
+																				  
+																			 
+														 
+														
+															   
+														   
+													  
+																
+																  
+															  
+												  
+														  
+													  
+													  
+															
+														
+															
+														
+															
+															   
+															
+														
+															  
+														  
+															  
+															
+																  
+																				
+																	   
+																		
+																	   
+																		
+																		 
+																		  
+																			 
+																			  
+																		 
+																		  
+																		   
+																			
+																		 
+																		  
+																		
+																		 
+																		 
+																		  
+																	  
+																	 
+																		  
+																		  
+																   
+														  
+																	
+																		
+															
+														   
+															  
+															 
+																	
+																   
+																
+															   
+																  
+															  
+															 
+																
+																		
+																	
+																  
+																
+																	
+																   
+															   
+																				
+																					
+																		  
+																			  
+																			
+																				
+																				
+																			
+																					  
+																								 
+															  
+																  
+																		
+																			
+																	
+																		
+																  
+																	  
+																	
+																		
+																		  
+																			   
+																				
+																					 
+																
+																	 
+												 
+												
+														 
+																												   
+																													  
+																															
+																														
+														   
+															
+																		  
+														  
+													   
+															  
+														   
+														  
+														 
+																   
+																	
+																   
+																	
+																   
+																	
+														
+														
+														
+															
+																		
+														   
+																
+															   
+														  
+															  
+														  
+																										 
+																										  
+																											  
+														 
+														  
+															  
+																  
+																	 
+									  
+												  
+												  
+												
+															   
+																
+													   
+											 
+														 
+														
+										 
+										   
+										  
+											 
+												   
+												 
+												 
+												   
+														 
+												 
+													
+														
+													  
+													  
+													
+												   
+														 
+													
+												   
+												  
+													 
+										  
+														 
+														  
+													  
+														
+													  
+														
+																   
+													 
+													 
+												 
+												
+															   
+												  
+													 
+												  
+													  
+																					   
+																  
+													   
+											 
+													
+													
+													 
+														 
+														 
+													 
+														   
+												   
+												
+													   
+											 
+																											
+														  
+														  
+													 
+													
+														
+														
+														
+													  
+														
+													  
+												  
+											  
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															  
+												  
+											 
+											   
+											 
+																																																																																																																																																																																																																																																																																											   
+														 
+																																																										
+																																																																																																																																																													 
+													
+												
+															 
+											  
+														   
+													
+													  
+													   
+												  
+														
+																																																																																							  
+													   
+													 
+												   
+													 
+																 
+
+														   
+
+  
+														  
+  
+
+												  
+										 
+														   
+														   
+									 
+									 
+
+  
+															 
+  
+
+																												  
+				  
+					  
+				  
+								
+											
+								 
+
+														   
+
+  
+													
+  
+
+											
+												  
+							  
+								 
+							   
+													  
+
+  
+													   
+  
+
+																	 
+							 
+								
+							  
+						   
+					   
+					   
+					  
+
+														   
+
+  
+													  
+  
+
+											  
+													
+								 
+							  
+											   
+													  
+
+  
+														 
+  
+
+																			   
+								   
+					   
+									  
+				   
+							
+				   
+							 
+					
+
+														   
+
+  
+											   
+  
+
+									   
+											 
+							  
+							  
+							  
+						  
+									 
+
+														   
+
+  
+												   
+  
+
+										   
+												 
+							   
+									  
+								 
+									
+							  
+													   
+
+  
+													  
+  
+
+																										 
+								   
+
+														   
+
+  
+												  
+  
+
+										  
+												
+											 
+							  
 CREATE TABLE `oc_user` (
+						  
+								 
+									
+							 
+													   
+
+  
+													 
+  
+
+																													  
+																					
+
+														   
+
+  
+																	
+  
+
+															
+								 
+									   
+												 
+									 
+
+  
+									
+  
+
+																					   
+		
+		
+
+														   
+
+  
+												  
+  
+
+										  
+												
+								  
+								 
+							   
+										 
+							 
+														
+
+  
+													 
+  
+
+																									
+						 
+
+														   
+
+  
+											   
+  
+
+									   
+											 
+							  
+							   
+							   
+							 
+								 
+						  
+									 
+
+														   
+
+  
+													 
+  
+
+											 
+												   
+							  
+								 
+							   
+							 
+						
+								 
+								
+									 
+
+														   
+
+  
+												
+  
+
+										
+											  
+							   
+								   
+							   
+								 
+						   
+									 
+
+														   
+
+  
+											  
+  
+
+									  
+											
+								   
+								  
+								  
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
   `user_group_id` int(11) NOT NULL,
   `username` varchar(20) NOT NULL,
@@ -4002,6 +6241,14 @@ CREATE TABLE `oc_user` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -----------------------------------------------------------
+																																								
+																																														
+
+														   
+
+  
+													
+  
 
 --
 -- Table structure for table `oc_user_group`
@@ -4274,6 +6521,18 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (341, 20, 'Могилев', 'MA', 1),
 (342, 20, 'Минская область', 'MI', 1),
 (343, 20, 'Витебск', 'VI', 1),
+							   
+							   
+									
+										 
+														
+											  
+										  
+									
+															  
+											
+															  
+															  
 (1716, 109, 'Алматинская область', 'AL', 1),
 (1717, 109, 'Алматы', 'ALA', 1),
 (1718, 109, 'Акмолинская область', 'AM', 1),
@@ -4299,6 +6558,17 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (1798, 115, 'Osh', 'O', 1),
 (1799, 115, 'Talas', 'T', 1),
 (1800, 115, 'Ysyk-Kol', 'Y', 1),
+							   
+								
+							  
+							   
+								
+								
+										   
+															
+															 
+												 
+																   
 (2721, 176, 'Республика Хакасия', 'KK', 1),
 (2722, 176, 'Забайкальский край', 'ZAB', 1),
 (2723, 176, 'Чукотский АО', 'CHU', 1),
@@ -4386,9 +6656,18 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (2806, 176, 'Ярославская область', 'YAR', 1),
 (2807, 176, 'Свердловская область', 'SVE', 1),
 (2808, 176, 'Республика Марий Эл', 'ME', 1),
+									   
+										  
+									  
+									 
+															
+																
+															  
+													  
 (3480, 220, 'Черкасская область', '71', 1),
 (3481, 220, 'Черниговская область', '74', 1),
 (3482, 220, 'Черновицкая область', '77', 1),			
+															
 (3484, 220, 'Днепропетровская область', '12', 1),
 (3485, 220, 'Донецкая область', '14', 1),
 (3486, 220, 'Ивано-Франковская область', '26', 1),
@@ -4403,6 +6682,7 @@ INSERT INTO `oc_zone` (`zone_id`, `country_id`, `name`, `code`, `status`) VALUES
 (3495, 220, 'Одесская область', '51', 1),
 (3496, 220, 'Полтавская область', '53', 1),
 (3497, 220, 'Ровненская область', '56', 1),
+														  
 (3499, 220, 'Сумская область', '59', 1),
 (3500, 220, 'Тернопольская область', '61', 1),
 (3501, 220, 'Винницкая область', '05', 1),

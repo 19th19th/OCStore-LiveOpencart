@@ -3,6 +3,7 @@
 // *	@license	GNU General Public License version 3; see LICENSE.txt
 
 // Text
+$_['button_continue']   = 'I agree';
 $_['text_information']  = 'Information';
 $_['text_service']      = 'Customer Service';
 $_['text_extra']        = 'Extras';

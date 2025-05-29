@@ -543,6 +543,12 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_account_id'] = $this->config->get('config_account_id');
 		}
+		
+		if (isset($this->request->post['config_cookie_id'])) {
+			$data['config_cookie_id'] = $this->request->post['config_cookie_id'];
+		} else {
+			$data['config_cookie_id'] = $this->config->get('config_cookie_id');
+		}
 
 		$this->load->model('catalog/information');
 
