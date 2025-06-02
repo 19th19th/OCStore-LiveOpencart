@@ -124,11 +124,12 @@
         {% else %}
         {% set class = 'col-sm-4' %}
         {% endif %}
-        <div class="{{ class }}">
+        <div class="sticky {{ class }}">
           <div class="btn-group">
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product_id }}');"><i class="fa fa-heart"></i></button>
             <button type="button" data-toggle="tooltip" class="btn btn-default" title="{{ button_compare }}" onclick="compare.add('{{ product_id }}');"><i class="fa fa-exchange"></i></button>
           </div>
+		  <br><br>
           <h1>{{ heading_title }}</h1>
           <ul class="list-unstyled">
             {% if manufacturer %}
@@ -141,7 +142,7 @@
             <li>{{ text_stock }} {{ stock }}</li>
           </ul>
           {% if price %}
-          <ul class="list-unstyled">
+          <ul class="product-page__price list-unstyled">
             {% if not special %}
             <li>
               <h2>{{ price }}</h2>
@@ -170,7 +171,7 @@
           {% endif %}
           <div id="product"> {% if options %}
             <hr>
-            <h3>{{ text_option }}</h3>
+            <h4>{{ text_option }}</h4>
             {% for option in options %}
             {% if option.type == 'select' %}
             <div class="form-group{% if option.required %} required {% endif %}">
@@ -282,12 +283,12 @@
               <div class="help-block" id="recurring-description"></div>
             </div>
             {% endif %}
-            <div class="form-group">
+            <div class="product-page__qty-btn form-group">
               <label class="control-label" for="input-quantity">{{ entry_qty }}</label>
               <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" />
               <input type="hidden" name="product_id" value="{{ product_id }}" />
               <br />
-              <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
+              <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block"><i class="fa fa-shopping-cart"></i> {{ button_cart }}</button>
             </div>
             {% if minimum > 1 %}
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_minimum }}</div>
@@ -303,7 +304,7 @@
       </div>
       {% if products %}
       <h3>{{ text_related }}</h3>
-      <div class="row"> {% set i = 0 %}
+      <div class="row row-flex"> {% set i = 0 %}
         {% for product in products %}
         {% if column_left and column_right %}
         {% set class = 'col-xs-8 col-sm-6' %}
@@ -312,7 +313,7 @@
         {% else %}
         {% set class = 'col-xs-6 col-sm-3' %}
         {% endif %}
-        <div class="{{ class }}">
+        <div class="product-layout {{ class }}">
           <div class="product-thumb transition">
             <div class="image"><a href="{{ product.href }}"><img src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-responsive" /></a></div>
             <div class="caption">
