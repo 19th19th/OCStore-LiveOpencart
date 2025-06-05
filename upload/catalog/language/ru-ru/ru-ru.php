@@ -18,6 +18,7 @@ $_['text_select']           = ' --- Выберите --- ';
 $_['text_all_zones']        = 'Все зоны';
 $_['text_pagination']       = 'Показано с %d по %d из %d (всего %d страниц)';
 $_['text_loading']          = 'Загрузка...';
+$_['text_agree'] = 'Я прочитал(а) и согласен(на) с условиями <a href="%s" class="agree">%s</a>';
 
 // Buttons
 $_['button_address_add']    = 'Добавить адрес';
@@ -70,3 +71,4 @@ $_['error_upload_999']      = 'Неизвестная ошибка!';
 $_['datepicker']            = 'ru-ru';
 $_['text_no_results']       = 'Нет результатов';
 $_['error_curl']            = 'CURL: Error Code(%s): %s';
+$_['error_agree'] = 'Вы должны прочитать и согласится с %s!';
