@@ -65,15 +65,15 @@ div.required .control-label:before {content:'* ';color:#f00;font-weight:700}
 #menu {margin:0 0 25px;background-color:#229ac8;min-height:46px;border:none;border-radius:6px}
 #menu .nav > li > a {color:#fff;padding:13px 20px;min-height:15px}
 #menu .nav > li > a:hover, #menu .nav > li.open > a {background-color:rgba(0, 0, 0, 0.1)}
-#menu .dropdown-menu {padding-bottom:0}
+
 #menu .dropdown-inner {display:table}
 #menu .dropdown-inner ul {display:table-cell}
 #menu .dropdown-inner a {min-width:250px;display:block;padding:5px 10px;clear:both;line-height:20px;color:#333333}
 #menu li.dropdown > a:after{display:inline-block;content:'›';margin:0 0 0 10px;font-weight:700;color:inherit;transform:rotate(90deg)}
 #menu li.dropdown.open > a:after, #menu li.dropdown:hover > a:after{transform:rotate(-90deg)}
 #menu .dropdown-inner li a:hover {color:#229ac8;background:none}
-#menu .see-all {display:block;margin:10px}
-#menu .see-all:hover, #menu .see-all:focus {text-decoration:none;color:#333;background:none}
+#menu .see-all {display:none;margin:10px}
+#menu .see-all:hover, #menu .see-all:focus {text-decoration:none;color:#fff;background:none}
 #menu #category {float:left;padding-left:15px;font-size:1.2em;font-weight:700;line-height:44px;color:#fff}
 #menu .btn-navbar {font-size:15px;font-stretch:expanded;color:#fff;padding:2px 15px;float:right;background-color:#229ac8;border:solid 1px rgba(0 0 0 /.1)}
 #menu .btn-navbar:hover, #menu .btn-navbar:focus, #menu .btn-navbar:active, #menu .btn-navbar.disabled, #menu .btn-navbar[disabled] {color:#fff;background-color:#229ac8}
@@ -166,7 +166,7 @@ html[dir=rtl] .breadcrumb > li::after {
 .product-thumb .price-old {color:#999;text-decoration:line-through;margin-left:10px}
 .product-thumb .price-tax {color:#999;font-weight:400;font-size:.65em;display:block;margin:5px 0 0}
 .product-thumb .button-group {display:flex;overflow:auto;border:none;overflow:hidden;max-width:300px}
-.product-thumb .button-group button {border:none;padding:7px 15px;background-color:#eee;color:#666;text-align:center;white-space:nowrap;border-radius:4px}
+.product-thumb .button-group button {border:none;padding:5px 15px;background-color:#eee;color:#666;text-align:center;white-space:nowrap;border-radius:4px}
 .product-thumb .button-group button:first-child{flex:1 1 100%;color:#fff;background:#229ac8}
 .product-thumb .button-group button + button {margin:0 0 0 15px;color:#666;background:#f7f7f7}
 .product-thumb .button-group button:first-child:hover {background:#33a3d2;text-decoration:none;cursor:pointer}
@@ -243,7 +243,7 @@ h2.price {margin:0}
 	#menu .dropdown-inner {display:block}
 	#menu .dropdown-inner a {width:100%;color:#fff}
 	#menu .dropdown-menu ul li a:hover {background:rgba(0, 0, 0, 0.1)}
-	#menu .see-all {margin:10px 10px 0;font-weight:700;font-size:.85em;border:none;border-radius:0;color:#fff}
+	#menu .see-all {display:block;margin:10px 10px 0;font-weight:700;font-size:.85em;border:none;border-radius:0;color:#fff}
 	#menu .nav > li{border-top:solid 1px rgba(0 0 0 /.1)}
 	
 	.cookie-notification__container{flex-wrap:wrap}
