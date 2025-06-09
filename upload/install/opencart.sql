@@ -4896,7 +4896,7 @@ INSERT INTO `oc_setting` (`store_id`, `code`, `key`, `value`, `serialized`) VALU
 (0, 'config', 'config_seopro_lowercase', '0', 0),
 (0, 'config', 'config_page_postfix', '.html', 0),
 (0, 'config', 'config_valide_param_flag', '1', 0),
-(0, 'config', 'config_valide_params', 'tracking\\r\\nutm_source\\r\\nutm_campaign\\r\\nutm_medium\\r\\ntype\\r\\nsource\\r\\nblock\\r\\nposition\\r\\nkeyword\\r\\nyclid\\r\\ngclid', '0'),
+(0, 'config', 'config_valide_params', 'tracking\nutm_source\nutm_campaign\nutm_medium\ntype\nsource\nblock\nposition\nkeyword\nyclid\ngclid', '0'),
 (0, 'config', 'config_canonical_method', '1', 0),
 (0, 'config', 'config_canonical_self', '1', 0),
 (0, 'config', 'config_add_prevnext', '0', 0),
