@@ -8,8 +8,9 @@ class ControllerCommonFooter extends Controller {
 
 			$php_version = phpversion();
 			$ioncube_version = function_exists('ioncube_loader_version') ? ioncube_loader_version() : 'Not installed';
+			$server_time = date('Y-m-d H:i:s');
 
-			$data['extra_version'] = ' | PHP ' . $php_version . ' | IonCube ' . $ioncube_version;
+			$data['extra_version'] = ' | PHP ' . $php_version . ' | IonCube ' . $ioncube_version . ' | Server time: ' . $server_time;
 		} else {
 			$data['text_version'] = '';
 			$data['extra_version'] = '';
