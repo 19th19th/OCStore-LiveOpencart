@@ -226,6 +226,26 @@ class ControllerBlogArticle extends Controller {
 			}
 
 			$this->load->model('tool/image');
+			
+			if (!empty($article_info['image'])) {
+				$data['thumb'] = $this->model_tool_image->resize($article_info['image'], 200, 300);
+				$data['popup'] = $this->model_tool_image->resize($article_info['image'], 1200, 900);
+			} else {
+				$data['thumb'] = '';
+				$data['popup'] = '';
+			}
+
+			$data['images'] = array();
+
+			$results = $this->model_blog_article->getArticleImages($article_id);
+
+			foreach ($results as $result) {
+				$data['images'][] = array(
+					'popup' => $this->model_tool_image->resize($result['image'], 1200, 900),
+					'thumb' => $this->model_tool_image->resize($result['image'], 100, 100)
+				);
+			}
+
 			$data['products'] = array();
 			
 			$results = $this->model_blog_article->getArticleRelatedProduct($this->request->get['article_id']);
