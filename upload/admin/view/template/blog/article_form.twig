@@ -218,6 +218,16 @@
                       <td></td>
                     </tr>
                   </thead>
+                  {% set image_row = 0 %}
+                  {% for article_image in article_images %}
+                    <tr id="image-row{{ image_row }}">
+                      <td class="text-left"><a href="" id="thumb-image{{ image_row }}" data-toggle="image" class="img-thumbnail"><img src="{{ article_image.thumb }}" alt="" title="" data-placeholder="{{ placeholder }}"/></a> <input type="hidden" name="article_image[{{ image_row }}][image]" value="{{ article_image.image }}" id="input-image{{ image_row }}"/></td>
+                      <td class="text-right"><input type="text" name="article_image[{{ image_row }}][sort_order]" value="{{ article_image.sort_order }}" placeholder="{{ entry_sort_order }}" class="form-control"/></td>
+                      <td class="text-left"><button type="button" onclick="$('#image-row{{ image_row }}').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>
+                    </tr>
+                    {% set image_row = image_row + 1 %}
+                  {% endfor %}
+
                 </table>
               </div>
             </div>
@@ -452,6 +462,25 @@ $('.datetime').datetimepicker({
 	pickTime: true
 });
 //--></script> 
+
+  <script type="text/javascript"><!--
+    var image_row = {{ image_row }};
+
+    function addImage() {
+      html = '<tr id="image-row' + image_row + '">';
+      html += '  <td class="text-left"><a href="" id="thumb-image' + image_row + '"data-toggle="image" class="img-thumbnail"><img src="{{ placeholder }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a><input type="hidden" name="article_image[' + image_row + '][image]" value="" id="input-image' + image_row + '" /></td>';
+      html += '  <td class="text-right"><input type="text" name="article_image[' + image_row + '][sort_order]" value="" placeholder="{{ entry_sort_order }}" class="form-control" /></td>';
+      html += '  <td class="text-left"><button type="button" onclick="$(\'#image-row' + image_row + '\').remove();" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger"><i class="fa fa-minus-circle"></i></button></td>';
+      html += '</tr>';
+
+      $('#images tbody').append(html);
+
+      image_row++;
+    }
+
+    //--></script>
+
+
   <script type="text/javascript"><!--
 $('#language a:first').tab('show');
 $('#option a:first').tab('show');
